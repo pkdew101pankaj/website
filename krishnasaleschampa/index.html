@@ -1,0 +1,2698 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Sales | Paints & Hardware Showroom · Champa, Chhattisgarh</title>
+  <meta name="description"
+    content="Krishna Sales is an authorized paints, waterproofing, and architectural hardware showroom in Shankar Nagar, Champa offering interior/exterior paints, Dr. Fixit, wall putty, and tools." />
+
+  <!-- Favicon using official logo -->
+  <link rel="icon" type="image/jpeg" href="assets/krishna-sales-logo.jpg" />
+
+  <!-- Google Fonts: Bebas Neue, DM Sans, DM Mono, Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: {
+              950: '#070807',
+              900: '#0d0f0e',
+              850: '#121413',
+              800: '#171a19',
+              700: '#222624',
+              600: '#323835',
+            },
+            peacock: {
+              cyan: '#0ea5e9',
+              blue: '#0284c7',
+              navy: '#0f2e4c',
+              emerald: '#10b981',
+              gold: '#f59e0b',
+            },
+            amberBrand: {
+              300: '#fde68a',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              accent: '#e5a93b',
+            },
+            whatsapp: '#25D366',
+          },
+          fontFamily: {
+            display: ['"Bebas Neue"', 'sans-serif'],
+            sans: ['"DM Sans"', 'sans-serif'],
+            mono: ['"DM Mono"', 'monospace'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Shop Configuration File -->
+  <script src="shop-config.js"></script>
+  <!-- Master Formulations (124 Products) & Harmonizer Data -->
+  <script src="master-products.js"></script>
+  <!-- Exact Catalogue & Harmonizer Stylesheet from Screen Recording -->
+  <link rel="stylesheet" href="catalogue-style.css" />
+
+  <!-- Structured SEO Data (Schema.org) for Google Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "Store", "HardwareStore"],
+    "@id": "https://share.google/AkY2RAW7u3YG5uquY",
+    "name": "Krishna Sales - Paints & Hardware",
+    "alternateName": "Krishna Sales Champa",
+    "description": "Authorized paints, waterproofing, and hardware showroom in Champa offering interior/exterior paints, Dr. Fixit, wall putty, and contractor tools.",
+    "url": "https://share.google/AkY2RAW7u3YG5uquY",
+    "telephone": "+917067905867",
+    "email": "krishnasales.champa@gmail.com",
+    "priceRange": "₹₹",
+    "image": [
+      "assets/krishna-sales-logo.jpg"
+    ],
+    "logo": "assets/krishna-sales-logo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Manjhali Talab, Station Road, Shankar Nagar",
+      "addressLocality": "Champa",
+      "addressRegion": "Chhattisgarh",
+      "postalCode": "495671",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:30",
+        "closes": "20:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://share.google/AkY2RAW7u3YG5uquY"
+    ]
+  }
+  </script>
+
+  <style>
+    /* Custom scrollbar and subtle glowing borders */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0d0f0e;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #252a28;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e5a93b;
+    }
+
+    .amber-glow {
+      box-shadow: 0 0 45px -10px rgba(229, 169, 59, 0.28);
+    }
+
+    .peacock-glow {
+      box-shadow: 0 0 45px -10px rgba(14, 165, 233, 0.25);
+    }
+
+    .glass-nav {
+      background: rgba(13, 15, 14, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .glass-card {
+      background: rgba(23, 26, 25, 0.65);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(229, 169, 59, 0.35);
+    }
+
+    /* Infinite Marquee Animations for Running Customer Testimonials */
+    @keyframes marquee-scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes marquee-scroll-reverse {
+      0% {
+        transform: translateX(-50%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee-scroll 45s linear infinite;
+    }
+
+    .marquee-track-reverse {
+      display: flex;
+      width: max-content;
+      animation: marquee-scroll-reverse 50s linear infinite;
+    }
+
+    .marquee-track:hover,
+    .marquee-track-reverse:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+
+      50% {
+        transform: scale(1.15);
+        opacity: 0.3;
+      }
+
+      100% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+    }
+
+    .pulse-ring {
+      animation: pulse-ring 2s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Exact Catalogue & Harmonizer Stylesheet -->
+  <link rel="stylesheet" href="catalogue-style.css" />
+  <style>
+    /* Harmonizer custom styling */
+    .colour-family-list {
+      gap: 4px 24px !important;
+    }
+
+    .colour-family-list button {
+      cursor: pointer;
+      width: 100%;
+      min-width: 0;
+      padding: 12px 10px !important;
+      border-radius: 8px;
+      transition: background 0.2s, padding-left 0.2s;
+    }
+
+    .colour-family-list button strong {
+      min-width: 0;
+      overflow-wrap: break-word;
+      line-height: 1.3;
+    }
+
+    .colour-family-list button em {
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .colour-family-list button:hover {
+      background: rgba(255, 255, 255, 0.05);
+      padding-left: 6px;
+    }
+
+    .colour-family-list button.active {
+      color: #0ea5e9 !important;
+      font-weight: 700;
+    }
+
+    .colour-family-list button.active span {
+      box-shadow: 0 0 10px rgba(14, 165, 233, 0.8);
+      transform: scale(1.2);
+    }
+
+    .swatch {
+      cursor: pointer;
+    }
+
+    .swatch:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .swatch.active {
+      outline: 2px solid #0ea5e9;
+      outline-offset: 3px;
+    }
+
+    .product-card {
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .product-utility button.active {
+      color: #0ea5e9 !important;
+      background: rgba(14, 165, 233, 0.15) !important;
+    }
+
+    /* Running marquee styles */
+    .review-track-left {
+      animation: reviewMarqueeLeft 40s linear infinite;
+    }
+
+    .review-track-right {
+      animation: reviewMarqueeRight 40s linear infinite;
+    }
+
+    .review-track-left:hover,
+    .review-track-right:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes reviewMarqueeLeft {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes reviewMarqueeRight {
+      0% {
+        transform: translateX(-50%);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body
+  class="bg-obsidian-900 text-stone-200 font-sans antialiased selection:bg-amberBrand-accent selection:text-black min-h-screen flex flex-col pb-16 md:pb-0">
+
+  <!-- ================= TOP NOTIFICATION BAR ================= -->
+  <div
+    class="bg-gradient-to-r from-amberBrand-600 via-amberBrand-accent to-peacock-cyan text-black py-1.5 px-4 text-xs font-mono font-medium tracking-wide">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-black animate-pulse"></span>
+        <span id="top-badge">Krishna Sales · Authorized Paints & Hardware Store · Champa, CG</span>
+      </div>
+      <div class="hidden sm:flex items-center space-x-6 text-xs">
+        <span id="top-hours" class="flex items-center gap-1 font-semibold">
+          <i data-lucide="clock" class="w-3.5 h-3.5"></i> Daily 8:30 AM – 8:30 PM
+        </span>
+        <a id="top-phone" href="tel:+917067905867" class="font-bold hover:underline flex items-center gap-1">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i> +91 70679 05867
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= STICKY HEADER / NAVIGATION ================= -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+
+      <!-- Logo & Official Brand Mark -->
+      <a href="#top" class="flex items-center space-x-3.5 group">
+        <div
+          class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden bg-white p-1.5 shadow-md border border-white/20 group-hover:scale-105 transition-transform shrink-0 flex items-center justify-center">
+          <img src="assets/krishna-sales-logo.jpg" alt="Krishna Sales Official Logo"
+            class="w-full h-full object-contain" />
+        </div>
+        <div class="flex items-center gap-2.5">
+          <span id="nav-brand-name"
+            class="font-display text-3xl sm:text-4xl tracking-wide text-white leading-tight group-hover:text-amberBrand-accent transition-colors">
+            KRISHNA SALES
+          </span>
+          <span
+            class="hidden sm:inline-block text-[11px] bg-peacock-cyan/20 text-peacock-cyan border border-peacock-cyan/40 px-2 py-0.5 rounded font-mono font-semibold">
+            Champa
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium text-stone-300">
+        <a href="#ai-shade-visualiser"
+          class="hover:text-amberBrand-accent transition-colors flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-peacock-cyan/20 to-amberBrand-accent/20 border border-peacock-cyan/40 text-amberBrand-accent font-bold shadow-sm">
+          <i data-lucide="wand-2" class="w-3.5 h-3.5 text-amberBrand-accent animate-pulse"></i>
+          <span>AI Shade Visualiser</span>
+          <span class="text-[9px] bg-peacock-cyan text-black px-1.5 py-0.2 rounded font-mono font-bold">New</span>
+        </a>
+        <a href="#budget" class="hover:text-amberBrand-accent transition-colors flex items-center gap-1.5">
+          <span>Paint Calculator</span>
+          <span
+            class="text-[10px] bg-amberBrand-accent/20 text-amberBrand-400 border border-amberBrand-400/30 px-1.5 py-0.5 rounded font-mono">Live</span>
+        </a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="hidden sm:flex items-center space-x-3">
+        <a id="header-call-btn" href="tel:+917067905867"
+          class="px-3.5 py-2 rounded-lg border border-white/20 hover:border-amberBrand-accent hover:text-amberBrand-accent text-xs font-mono tracking-wide flex items-center gap-2 transition-all">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>Call: 70679 05867</span>
+        </a>
+        <a id="header-whatsapp-btn" href="https://wa.me/917067905867" target="_blank" rel="noopener noreferrer"
+          class="px-4 py-2 rounded-lg bg-whatsapp text-white hover:brightness-110 text-xs font-mono font-bold tracking-wide flex items-center gap-2 shadow-md transition-all">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>WhatsApp Us</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-toggle" aria-label="Toggle Navigation Menu"
+        class="lg:hidden p-2 rounded-lg text-stone-400 hover:text-white hover:bg-white/5 transition-colors">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-obsidian-950 px-6 py-6 space-y-4">
+      <div class="grid grid-cols-2 gap-3 text-sm font-medium">
+        <a href="#ai-shade-visualiser"
+          class="mobile-nav-link col-span-2 py-2.5 px-3 rounded-lg bg-gradient-to-r from-peacock-cyan/20 to-amberBrand-accent/20 border border-peacock-cyan/40 text-amberBrand-accent font-bold flex items-center justify-between">
+          <span class="flex items-center gap-2">
+            <i data-lucide="wand-2" class="w-4 h-4 text-amberBrand-accent animate-pulse"></i>
+            AI Shade Visualiser
+          </span>
+          <span class="text-[10px] bg-peacock-cyan text-black px-2 py-0.5 rounded font-mono font-bold">Colorize
+            Home</span>
+        </a>
+        <a href="#budget"
+          class="mobile-nav-link col-span-2 py-2 px-3 rounded bg-white/5 hover:bg-amberBrand-accent/20 hover:text-amberBrand-accent">Paint
+          Calculator</a>
+      </div>
+      <div class="pt-3 border-t border-white/10 flex flex-col gap-2.5">
+        <a id="mobile-call-btn" href="tel:+917067905867"
+          class="w-full py-2.5 rounded-lg border border-white/20 text-center font-mono text-xs flex items-center justify-center gap-2">
+          <i data-lucide="phone" class="w-4 h-4"></i> Call Krishna Sales (+91 70679 05867)
+        </a>
+        <a id="mobile-wa-btn" href="https://wa.me/917067905867" target="_blank"
+          class="w-full py-2.5 rounded-lg bg-whatsapp text-white text-center font-mono text-xs font-bold flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Inquiries (Direct Reply)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="top" class="relative pt-16 pb-24 md:pt-24 md:pb-32 overflow-hidden border-b border-white/10">
+    <!-- Ambient glowing backdrop effect matching peacock theme -->
+    <div
+      class="absolute -top-40 right-0 w-[500px] h-[500px] bg-peacock-cyan/10 rounded-full blur-[140px] pointer-events-none">
+    </div>
+    <div
+      class="absolute top-1/2 left-0 w-[400px] h-[400px] bg-amberBrand-500/10 rounded-full blur-[120px] pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left: Hero Copy & CTA -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex flex-wrap items-center gap-2.5 px-4 py-2 rounded-full bg-white/5 border border-white/10 font-mono">
+            <span class="w-2.5 h-2.5 rounded-full bg-peacock-emerald shrink-0"></span>
+            <span id="hero-badge-tag" class="text-sm sm:text-base font-bold text-amberBrand-accent">Birla Opus Authorised Franchise Store</span>
+            <span class="text-stone-500 text-xs">|</span>
+            <span id="hero-location-tag" class="text-xs sm:text-sm font-semibold text-stone-200">Manjhali Talab, Station Road Champa</span>
+          </div>
+
+          <div class="space-y-2">
+            <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl tracking-tight text-white leading-none">
+              <span id="hero-title-main" class="block">VIBRANT SPACES WITH</span>
+              <span id="hero-title-accent"
+                class="block text-transparent bg-clip-text bg-gradient-to-r from-amberBrand-300 via-peacock-cyan to-peacock-emerald">
+                PREMIUM PAINTS & HARDWARE
+              </span>
+            </h1>
+          </div>
+
+          <p id="hero-desc" class="text-stone-300 text-base sm:text-lg max-w-2xl leading-relaxed font-light">
+            Champa's trusted destination for luxury interior emulsions, heavy-duty all-weather exterior shields,
+            advanced Dr. Fixit waterproofing, wall putties, and durable architectural hardware supplies.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#products"
+              class="px-7 py-3.5 rounded-lg bg-amberBrand-accent text-black font-mono font-bold text-sm hover:brightness-110 shadow-lg shadow-amberBrand-accent/20 flex items-center gap-2 transition-transform hover:-translate-y-0.5">
+              <span>Browse Catalog</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+
+            <a href="#budget"
+              class="px-6 py-3.5 rounded-lg bg-obsidian-800 border border-white/15 hover:border-amberBrand-accent text-stone-200 font-mono text-sm flex items-center gap-2 transition-all">
+              <i data-lucide="calculator" class="w-4 h-4 text-amberBrand-accent"></i>
+              <span>Paint Calculator</span>
+            </a>
+
+            <a id="hero-whatsapp-link" href="https://wa.me/917067905867" target="_blank" rel="noopener noreferrer"
+              class="px-5 py-3.5 rounded-lg border border-whatsapp/40 text-whatsapp hover:bg-whatsapp hover:text-white font-mono text-sm flex items-center gap-2 transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>WhatsApp Inquiry</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges & Guarantees -->
+          <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 max-w-xl text-xs font-mono text-stone-400">
+            <div class="flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-4 h-4 text-amberBrand-accent shrink-0"></i>
+              <span>100% Genuine Sealed</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="cpu" class="w-4 h-4 text-peacock-cyan shrink-0"></i>
+              <span>Computerized Tinting</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="truck" class="w-4 h-4 text-peacock-emerald shrink-0"></i>
+              <span>Express Site Delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Storefront Hero Showcase Card with Official Logo Badge -->
+        <div class="lg:col-span-5 relative">
+          <div
+            class="relative rounded-2xl overflow-hidden border border-white/15 bg-obsidian-850 shadow-2xl amber-glow group">
+            <div class="aspect-[4/3] overflow-hidden relative bg-black">
+              <video id="hero-store-video" src="assets/krishna-sales-storefront.mp4"
+                poster="assets/krishna-sales-storefront-poster.jpg" autoplay loop muted muted="muted" playsinline
+                webkit-playsinline x5-playsinline preload="auto" disablepictureinpicture
+                controlslist="nodownload nofullscreen noremoteplayback"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <source src="assets/krishna-sales-storefront.mp4" type="video/mp4" />
+                <img src="assets/krishna-sales-storefront-poster.jpg" alt="Krishna Sales Champa Storefront"
+                  class="w-full h-full object-cover" />
+              </video>
+              <script>
+                document.g et        store - video");
+                if (v) { v.defaultMu        d = true; v.volume = 0; v.playsInline = true; }
+                }) ();
+              </script>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/40 to-transparent pointer-events-none">
+              </div>
+
+              <!-- Video Live Tour Badge -->
+              <div
+                class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10 text-[10px] font-mono text-stone-300 flex items-center gap-1.5 z-20">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-ping"></span>
+                <span>STOREFRONT TOUR</span>
+              </div>
+
+              <!-- Floating Location Badge -->
+              <div
+                class="absolute top-4 left-4 bg-obsidian-950/85 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 text-xs font-mono text-amberBrand-400 flex items-center gap-1.5">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                <span id="hero-img-location">Manjhali Talab, Shankar Nagar, Champa</span>
+              </div>
+
+              <!-- Rating Badge -->
+              <div
+                class="absolute top-4 right-4 bg-obsidian-950/85 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 text-xs font-mono text-emerald-400 flex items-center gap-1.5">
+                <i data-lucide="star" class="w-3.5 h-3.5 fill-emerald-400"></i>
+                <span>4.9 / 5.0 Google</span>
+              </div>
+
+              <!-- Official Logo Overlay Badge -->
+              <div class="absolute bottom-4 left-6 flex items-center gap-3">
+                <div class="w-14 h-14 rounded-xl bg-white p-1 shadow-2xl border border-white/20">
+                  <img src="assets/krishna-sales-logo.jpg" alt="Logo" class="w-full h-full object-contain" />
+                </div>
+                <div>
+                  <h4 class="font-display text-2xl text-white tracking-wide">KRISHNA SALES</h4>
+                  <p class="text-[11px] font-mono text-amberBrand-accent">Official Google Business Verified</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Specs -->
+            <div class="p-6 space-y-4">
+              <div class="flex items-start justify-between">
+                <div>
+                  <h3 id="hero-card-title" class="font-display text-xl text-white tracking-wide">VISIT OUR CHAMPA STORE
+                  </h3>
+                  <p id="hero-card-address" class="text-xs text-stone-400 font-mono mt-1">Station Road, Shankar Nagar,
+                    Champa, CG 495671</p>
+                </div>
+                <span id="hero-card-status"
+                  class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[11px] font-mono font-medium">Open
+                  Daily</span>
+              </div>
+
+              <div class="flex items-center gap-3 pt-2">
+                <a id="hero-card-directions" href="https://share.google/AkY2RAW7u3YG5uquY" target="_blank"
+                  class="flex-1 py-2.5 px-3 rounded-lg bg-white/10 hover:bg-white/15 text-white font-mono text-xs flex items-center justify-center gap-2 border border-white/10 transition-colors">
+                  <i data-lucide="navigation" class="w-3.5 h-3.5 text-amberBrand-accent"></i>
+                  <span>Google Maps</span>
+                </a>
+                <a id="hero-card-call" href="tel:+917067905867"
+                  class="flex-1 py-2.5 px-3 rounded-lg bg-amberBrand-accent/20 hover:bg-amberBrand-accent/30 text-amberBrand-400 font-mono text-xs flex items-center justify-center gap-2 border border-amberBrand-accent/30 transition-colors">
+                  <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                  <span>Call: 70679 05867</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Stats Bar -->
+      <div id="stats-container"
+        class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-obsidian-850 border border-white/10">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHOWROOM & STORE DETAILS ================= -->
+  <section id="shop" class="py-20 border-b border-white/10 bg-obsidian-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <div class="text-xs font-mono text-amberBrand-accent tracking-widest uppercase mb-2">Physical Store & Yard
+          </div>
+          <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide">KRISHNA SALES STOREFRONT</h2>
+          <p class="text-stone-400 text-sm max-w-xl mt-2 font-light">
+            Conveniently situated at Manjhali Talab, Station Road, Shankar Nagar in Champa. Direct walk-ins welcome for
+            contractor pricing, physical color shade tiles, and complete plumbing/hardware fittings.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <a id="store-direction-btn" href="https://share.google/AkY2RAW7u3YG5uquY" target="_blank"
+            class="px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-mono text-xs flex items-center gap-2 border border-white/10 transition-all">
+            <i data-lucide="map" class="w-4 h-4 text-amberBrand-accent"></i>
+            <span>Open in Google Maps</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Gallery Grid & Interactive Tour -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Interactive Gallery Cards -->
+        <div class="lg:col-span-7 space-y-4">
+          <div id="storefront-main-preview"
+            class="relative rounded-2xl overflow-hidden border border-white/15 aspect-[16/10] bg-black group">
+            <video id="store-preview-video" src="assets/krishna-sales-storefront.mp4"
+              poster="assets/krishna-sales-storefront-poster.jpg" autoplay loop muted muted="muted" playsinline
+              webkit-playsinline x5-playsinline preload="auto" disablepictureinpicture
+              controlslist="nodownload nofullscreen noremoteplayback" class="w-full h-full object-cover cursor-pointer">
+              <source src="assets/krishna-sales-storefront.mp4" type="video/mp4" />
+              <img src="assets/krishna-sales-storefront-poster.jpg" alt="Krishna Sales Showroom View"
+                class="w-full h-full object-cover" />
+            </video>
+            <script>
+              (fu      var v = document.g et ElementById("store-preview-video");
+              if (v) { v.defaultMuted = true; v.muted = true; v.volume = 0; v.playsInline = true; }
+              }) ();
+            </script>
+            <img id="store-preview-img" src="" alt="Krishna Sales Showroom View"
+              class="w-full h-full object-cover transition-opacity duration-300 hidden" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-transparent pointer-events-none">
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <span id="store-preview-tag"
+                  class="px-2.5 py-1 rounded bg-amberBrand-accent text-black font-mono text-[10px] font-bold uppercase tracking-wider">
+                  Storefront Video Tour
+                </span>
+                <h4 id="store-preview-title" class="font-display text-2xl sm:text-3xl text-white mt-2">Krishna Sales
+                  Storefront & Showroom</h4>
+                <p id="store-preview-sub" class="text-xs text-stone-300 font-mono">Station Road, Shankar Nagar, Champa
+                </p>
+              </div>
+
+              <!-- Interactive Controls -->
+              <div id="store-video-controls" class="flex items-center gap-2">
+                <button type="button" id="store-video-play-btn"
+                  class="px-3 py-1.5 rounded-lg bg-black/75 hover:bg-black text-white text-xs font-mono border border-white/20 backdrop-blur flex items-center gap-1.5 transition-all">
+                  <i data-lucide="pause" id="store-play-icon" class="w-3.5 h-3.5 text-amberBrand-accent"></i>
+                  <span id="store-play-text">Pause</span>
+                </button>
+                <button type="button" id="store-video-sound-btn"
+                  class="px-3 py-1.5 rounded-lg bg-black/75 hover:bg-black text-white text-xs font-mono border border-white/20 backdrop-blur flex items-center gap-1.5 transition-all">
+                  <i data-lucide="volume-2" id="store-sound-icon" class="w-3.5 h-3.5 text-amberBrand-accent"></i>
+                  <span id="store-sound-text">Sound Off</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thumbnails Selector -->
+          <div id="store-thumbnails" class="grid grid-cols-3 sm:grid-cols-6 gap-2.5 sm:gap-3">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+
+        <!-- Store Information, Timings & Google Map -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="p-6 rounded-2xl bg-obsidian-850 border border-white/10 space-y-6">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-12 h-12 rounded-xl bg-white p-1 border border-white/20 flex items-center justify-center shrink-0">
+                <img src="assets/krishna-sales-logo.jpg" alt="Logo" class="w-full h-full object-contain" />
+              </div>
+              <div>
+                <h3 class="font-display text-xl text-white tracking-wide">LOCATION & TIMINGS</h3>
+                <p class="text-xs text-stone-400 font-mono">Near Railway Station · Shankar Nagar</p>
+              </div>
+            </div>
+
+            <div class="space-y-4 text-xs font-mono text-stone-300">
+              <div class="flex items-start gap-3 pb-3 border-b border-white/10">
+                <i data-lucide="map-pin" class="w-4 h-4 text-amberBrand-accent shrink-0 mt-0.5"></i>
+                <div id="store-address-block">
+                  <strong class="text-white block font-sans text-sm">Krishna Sales - Paints & Hardware</strong>
+                  <span>Manjhali Talab, Station Road, Shankar Nagar</span><br />
+                  <span>Champa, Janjgir-Champa, Chhattisgarh – 495671</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3 pb-3 border-b border-white/10">
+                <i data-lucide="clock" class="w-4 h-4 text-amberBrand-accent shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white block font-sans text-sm">Store Timings</strong>
+                  <span id="store-hours-weekday">Monday – Saturday: 8:30 AM – 8:30 PM</span><br />
+                  <span id="store-hours-sunday">Sunday: 9:00 AM – 6:00 PM</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i data-lucide="phone" class="w-4 h-4 text-amberBrand-accent shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white block font-sans text-sm">Direct Phone & WhatsApp</strong>
+                  <a id="store-phone-link" href="tel:+917067905867"
+                    class="text-amberBrand-400 hover:underline block font-bold text-sm">+91 70679 05867</a>
+                  <a id="store-wa-link" href="https://wa.me/917067905867"
+                    class="text-whatsapp hover:underline block">WhatsApp: +91 70679 05867</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Embedded Map Frame -->
+            <div class="rounded-xl overflow-hidden border border-white/10 h-44 relative bg-obsidian-800">
+              <iframe id="store-map-iframe" src="" width="100%" height="100%" style="border:0;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps Location"></iframe>
+            </div>
+
+            <a href="https://share.google/AkY2RAW7u3YG5uquY" target="_blank"
+              class="w-full py-2.5 px-3 rounded-lg bg-amberBrand-accent/15 text-amberBrand-400 hover:bg-amberBrand-accent/25 border border-amberBrand-accent/30 font-mono text-xs flex items-center justify-center gap-2 transition-all">
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+              <span>View Verified Google Business Profile</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ATMOSPHERIC HUES · COLOUR HARMONIZER ==================== -->
+  <section id="colours" class="py-20 border-b border-white/10 bg-obsidian-950 relative overflow-hidden">
+    <div
+      class="absolute -top-32 right-1/4 w-[500px] h-[500px] bg-peacock-cyan/5 rounded-full blur-[140px] pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">
+
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <div class="text-xs font-mono text-peacock-cyan tracking-widest uppercase mb-2">Atmospheric Hues, Tailored By
+            Family</div>
+          <h2 class="font-display text-4xl sm:text-6xl text-white tracking-wide">
+            COLOUR, MADE MORE PERSONAL.
+          </h2>
+          <p class="text-stone-400 text-sm max-w-2xl mt-2 font-light">
+            Select a tonal family, then bring your interior floor plans or material swatches to Krishna Sales in Shankar
+            Nagar for expert lighting harmonization.
+          </p>
+        </div>
+
+        <a id="harmonizer-wa-btn"
+          href="https://wa.me/917067905867?text=Hello%20Krishna%20Sales,%20I%20am%20exploring%20colour%20directions%20for%20my%20rooms."
+          target="_blank"
+          class="px-5 py-3 rounded-lg bg-whatsapp text-white hover:brightness-110 font-mono text-xs font-bold flex items-center gap-2 shrink-0">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span id="harmonizer-btn-label">Ask About This Family →</span>
+        </a>
+      </div>
+
+      <!-- Exact Colour Family Explorer (1:1 from user video) -->
+      <div class="colour-family-explorer">
+
+        <!-- Focus Card -->
+        <div class="colour-family-focus colour-family-focus-new" id="family-focus-card"
+          style="--family-tone: #f5f5f5; --family-text: #171817;">
+          <span>Selected family</span>
+          <strong id="focus-family-name">Whites</strong>
+          <em>Explore colour directions that suit your room.</em>
+          <a id="focus-family-link"
+            href="https://wa.me/917067905867?text=Hello%20Krishna%20Sales,%20I%20am%20interested%20in%20the%20Whites%20colour%20family."
+            target="_blank">
+            Ask about this family →
+          </a>
+        </div>
+
+        <!-- 10 Families List -->
+        <div class="colour-family-list" role="list" aria-label="Colour families" id="tonal-families-list">
+          <!-- Rendered via JS -->
+        </div>
+
+        <!-- Reference Room with Wash -->
+        <figure class="colour-reference-card colour-reference-room room-shade-catalogue" style="--room-shade: #D9D1BD;"
+          id="room-shade-figure">
+          <img
+            src="https://kumarhardware.vercel.app/storage/extracted/birlaopus_ideas/Experience_Store_Paint_Studio_Birla_Opus.jpg"
+            alt="The same room visualised in different colour directions" width="600" height="400" loading="lazy" />
+          <div class="room-shade-catalogue-wash" aria-hidden="true" id="room-shade-wash"></div>
+          <figcaption>
+            <span>Same room · new mood · changes every 5 seconds</span>
+            <strong id="room-shade-caption">Linen story · NN 1004</strong>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <!-- Signature Swatches Studio -->
+      <div class="colour-swatch-studio visual-swatch-studio pt-6">
+        <div class="colour-swatch-heading flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <div class="eyebrow text-xs font-mono text-peacock-cyan uppercase tracking-widest mb-1">Signature Tone
+              Directions</div>
+            <h3 class="font-display text-3xl text-white">Sample curated<br />shades in living light.</h3>
+          </div>
+          <p class="text-stone-400 text-sm max-w-lg font-light">
+            These signature architectural directions anchor the ambiance of your space. Compare depth and undertones in
+            room daylight before finalizing formulation.
+          </p>
+        </div>
+
+        <!-- 6 Swatch Tiles -->
+        <div class="swatches swatches-new" role="list" aria-label="Colour swatch picker" id="swatches-row">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- ==================== EMBEDDED AI HOME PAINT VISUALIZER (VITE + REACT) ==================== -->
+      <div id="ai-shade-visualiser" class="pt-12 border-t border-white/10 space-y-6 scroll-mt-24">
+        <a id="gemini-ai-studio" class="sr-only" aria-hidden="true"></a>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <div class="text-xs font-mono text-peacock-cyan uppercase tracking-widest mb-1">100% Browser-Only · Zero API
+              Key</div>
+            <h3 class="font-display text-3xl text-white">AI HOME PAINT VISUALIZER</h3>
+          </div>
+          <a href="./visualizer/index.html" target="_blank" rel="noopener noreferrer"
+            class="px-4 py-2 rounded-lg bg-amberBrand-accent/15 hover:bg-amberBrand-accent/25 text-amberBrand-400 border border-amberBrand-accent/30 font-mono text-xs font-semibold flex items-center gap-2 self-start sm:self-auto transition-all">
+            <span>Open Standalone App ↗</span>
+          </a>
+        </div>
+        <div class="rounded-3xl overflow-hidden border border-white/15 bg-slate-950 shadow-2xl">
+          <iframe src="./visualizer/index.html?embed=true" title="AI Home Paint Visualizer"
+            class="w-full h-[1080px] border-0" loading="lazy"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= MASTER PRODUCT CATALOGUE (124 FORMULATIONS) ================= -->
+  <section id="products" class="py-20 border-b border-white/10 bg-obsidian-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amberBrand-accent/10 border border-amberBrand-accent/20 text-xs font-mono text-amberBrand-accent mb-2">
+            <span>ALL OFFICIAL MASTER FORMULATIONS</span>
+          </div>
+          <h2 class="font-display text-4xl sm:text-6xl text-white tracking-wide">
+            ARCHITECTURAL PAINTS & PRODUCTS
+          </h2>
+          <p class="text-stone-400 text-sm max-w-2xl mt-2 font-light">
+            Explore 124 mastercrafted formulations spanning Ultra-Luxury Interior Emulsions, All-Weather Exterior
+            Shields, Waterproofing Barriers, Designer Enamels, and Contractor Tools in stock at Krishna Sales.
+          </p>
+        </div>
+
+        <!-- Search Bar & Sort Dropdown -->
+        <div class="flex flex-wrap sm:flex-nowrap items-center gap-3 w-full md:w-auto">
+          <div class="relative w-full sm:w-72">
+            <input type="text" id="catalog-search" placeholder="Search 124 formulations..."
+              class="w-full bg-obsidian-800 border border-white/15 focus:border-amberBrand-accent rounded-lg px-4 py-2.5 pl-10 text-xs font-mono text-white placeholder-stone-500 focus:outline-none transition-colors" />
+            <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3.5 top-3"></i>
+          </div>
+
+          <div class="relative w-full sm:w-48 shrink-0">
+            <select id="catalog-sort"
+              class="w-full bg-obsidian-800 border border-white/15 focus:border-amberBrand-accent rounded-lg px-3.5 py-2.5 text-xs font-mono text-stone-200 focus:outline-none transition-colors cursor-pointer">
+              <option value="featured">Featured Curation</option>
+              <option value="name-asc">Name: A to Z</option>
+              <option value="name-desc">Name: Z to A</option>
+              <option value="family">Group by Family</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills & Items Count Status -->
+      <div class="space-y-4">
+        <div id="category-pills" class="flex flex-wrap items-center gap-2 border-b border-white/10 pb-4">
+          <!-- Rendered via JS -->
+        </div>
+
+        <div class="flex items-center justify-between text-xs font-mono text-stone-400">
+          <span id="products-count-badge" class="tracking-wider">SHOWING 1–12 OF 124 FORMULATIONS</span>
+          <div class="flex items-center gap-4">
+            <span id="favourites-count-pill"
+              class="hidden items-center gap-1 text-pink-400 bg-pink-500/10 px-2 py-0.5 rounded border border-pink-500/20">
+              <i data-lucide="heart" class="w-3.5 h-3.5 fill-pink-400"></i>
+              <span id="fav-count-num">0</span> Favourites
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Master Products Grid (12 per page) -->
+      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 min-h-[500px]">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Pagination Controls (1, 2, 3... 11) -->
+      <div id="products-pagination"
+        class="flex flex-wrap items-center justify-center gap-2 pt-6 border-t border-white/10">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Custom Order / Can't find banner -->
+      <div
+        class="p-8 rounded-2xl bg-gradient-to-r from-obsidian-850 via-obsidian-800 to-obsidian-850 border border-white/15 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+        <div class="space-y-1">
+          <h4 class="font-display text-2xl text-white">LOOKING FOR A SPECIFIC SHADE CODE OR BULK PROJECT DISPATCH?</h4>
+          <p class="text-stone-400 text-xs font-mono">Krishna Sales houses all 2,500+ computerized shade formulations
+            with wholesale contractor rates in Champa.</p>
+        </div>
+        <a id="bulk-inquiry-btn"
+          href="https://wa.me/917067905867?text=Hello%20Krishna%20Sales,%20I%20need%20a%20bulk%20quote%20for%20my%20painting%20project%20in%20Champa."
+          target="_blank"
+          class="px-6 py-3 rounded-lg bg-whatsapp text-white hover:brightness-110 font-mono text-xs font-bold tracking-wide flex items-center gap-2 shrink-0">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Ask for Wholesale Rates</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Floating Compare Tray (Appears when 2+ products are selected for comparison) -->
+    <div id="compare-tray"
+      class="fixed bottom-24 sm:bottom-8 left-1/2 -translate-x-1/2 z-40 hidden items-center gap-4 bg-obsidian-950/95 backdrop-blur-md px-6 py-3 rounded-full border border-amberBrand-accent/40 shadow-2xl">
+      <div class="flex items-center gap-2 text-xs font-mono text-white">
+        <i data-lucide="layers" class="w-4 h-4 text-amberBrand-accent"></i>
+        <span><strong id="compare-count" class="text-amberBrand-400">2</strong> products selected to compare</span>
+      </div>
+      <button id="open-compare-modal-btn"
+        class="px-4 py-1.5 rounded-full bg-amberBrand-accent text-black font-mono text-xs font-bold hover:brightness-110">
+        Compare Now
+      </button>
+      <button id="clear-compare-btn" class="text-stone-400 hover:text-white text-xs font-mono">
+        Clear
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVE PAINT & COST CALCULATOR ================= -->
+  <section id="budget" class="py-20 border-b border-white/10 bg-obsidian-950 relative overflow-hidden">
+    <div
+      class="absolute -bottom-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amberBrand-accent/5 rounded-full blur-[140px] pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
+
+      <div class="text-center max-w-3xl mx-auto space-y-3">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amberBrand-accent/10 border border-amberBrand-accent/20 text-xs font-mono text-amberBrand-accent">
+          <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+          <span>Instant Paint & Material Estimator</span>
+        </div>
+        <h2 class="font-display text-4xl sm:text-6xl text-white tracking-wide">ESTIMATE YOUR PAINT & MATERIAL COST</h2>
+        <p class="text-stone-400 text-sm font-light">
+          Input your total carpet area or room square footage to calculate exact litres of luxury paint, primers, and
+          wall putty required with estimated budget.
+        </p>
+      </div>
+
+      <!-- Calculator Box -->
+      <div
+        class="max-w-4xl mx-auto rounded-2xl bg-obsidian-850 border border-white/15 p-6 sm:p-10 shadow-2xl grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+
+        <!-- Left: Form Controls -->
+        <div class="md:col-span-7 space-y-6">
+          <!-- Area Slider & Direct Input -->
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <label for="calc-area-range" class="text-xs font-mono uppercase text-stone-300">Carpet / Wall Area (Sq.
+                Ft.)</label>
+              <div class="flex items-center gap-1">
+                <input type="number" id="calc-area-input" value="900" min="100" max="10000" step="50"
+                  class="w-24 bg-obsidian-900 border border-white/20 rounded px-2.5 py-1 text-right font-mono text-amberBrand-accent text-sm font-bold focus:outline-none focus:border-amberBrand-accent" />
+                <span class="text-xs text-stone-400 font-mono">sq.ft</span>
+              </div>
+            </div>
+            <input type="range" id="calc-area-range" min="200" max="4000" value="900" step="50"
+              class="w-full accent-amberBrand-accent cursor-pointer" />
+            <div class="flex justify-between text-[10px] font-mono text-stone-500 mt-1">
+              <span>200 sq.ft (1 Room)</span>
+              <span>1,200 sq.ft (2-3 BHK)</span>
+              <span>4,000+ sq.ft (Duplex/Villa)</span>
+            </div>
+          </div>
+
+          <!-- Project Type -->
+          <div>
+            <label class="text-xs font-mono uppercase text-stone-300 block mb-2">Project Surface Type</label>
+            <div class="grid grid-cols-3 gap-2 text-xs font-mono">
+              <button type="button"
+                class="calc-type-btn py-2.5 px-2 rounded-lg border border-amberBrand-accent bg-amberBrand-accent/15 text-amberBrand-accent font-bold"
+                data-type="interior-repaint">
+                Interior Repaint
+              </button>
+              <button type="button"
+                class="calc-type-btn py-2.5 px-2 rounded-lg border border-white/15 bg-obsidian-900 text-stone-300 hover:border-white/30"
+                data-type="interior-fresh">
+                Fresh New Wall
+              </button>
+              <button type="button"
+                class="calc-type-btn py-2.5 px-2 rounded-lg border border-white/15 bg-obsidian-900 text-stone-300 hover:border-white/30"
+                data-type="exterior-facade">
+                Exterior Shield
+              </button>
+            </div>
+          </div>
+
+          <!-- Quality Tier -->
+          <div>
+            <label class="text-xs font-mono uppercase text-stone-300 block mb-2">Paint Quality Grade</label>
+            <div class="grid grid-cols-3 gap-2 text-xs font-mono">
+              <button type="button"
+                class="calc-tier-btn py-2.5 px-2 rounded-lg border border-amberBrand-accent bg-amberBrand-accent/15 text-amberBrand-accent font-bold"
+                data-tier="luxury">
+                Luxury Sheen
+              </button>
+              <button type="button"
+                class="calc-tier-btn py-2.5 px-2 rounded-lg border border-white/15 bg-obsidian-900 text-stone-300 hover:border-white/30"
+                data-tier="premium">
+                Premium Satin
+              </button>
+              <button type="button"
+                class="calc-tier-btn py-2.5 px-2 rounded-lg border border-white/15 bg-obsidian-900 text-stone-300 hover:border-white/30"
+                data-tier="standard">
+                Economy Fresh
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Breakdown Output Box -->
+        <div class="md:col-span-5 bg-obsidian-900 rounded-xl border border-white/10 p-6 space-y-6">
+          <div>
+            <span class="text-[11px] font-mono text-stone-400 uppercase tracking-widest block">Estimated
+              Materials</span>
+            <div class="text-3xl font-display text-white mt-1" id="calc-topcoat-litres">14 – 16 Litres</div>
+            <p class="text-xs text-amberBrand-accent font-mono" id="calc-product-recommendation">Royale Luxury Washable
+              Emulsion</p>
+          </div>
+
+          <div class="space-y-3 pt-3 border-t border-white/10 text-xs font-mono text-stone-300">
+            <div class="flex justify-between">
+              <span class="text-stone-400">Primer Required:</span>
+              <span id="calc-primer-litres" class="font-bold text-white">8 – 10 Litres</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-stone-400">Acrylic Wall Putty:</span>
+              <span id="calc-putty-kg" class="font-bold text-white">40 Kg</span>
+            </div>
+            <div class="flex justify-between pt-2 border-t border-white/5 text-sm">
+              <span class="text-stone-300">Est. Material Budget:</span>
+              <span id="calc-cost-estimate" class="font-bold text-amberBrand-400 text-base">₹ 8,400 – ₹ 10,800</span>
+            </div>
+          </div>
+
+          <a id="calc-whatsapp-btn" href="#" target="_blank"
+            class="w-full py-3 rounded-lg bg-whatsapp text-white hover:brightness-110 font-mono text-xs font-bold flex items-center justify-center gap-2 transition-all">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Send Estimate to Krishna Sales</span>
+          </a>
+
+          <p class="text-[10px] text-stone-500 font-mono text-center">
+            *Estimates include 2 coats. Free on-site laser measurement available in Champa.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SERVICE JOURNEY STACK ================= -->
+  <section id="services" class="py-20 border-b border-white/10 bg-obsidian-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+      <div class="text-center max-w-2xl mx-auto space-y-3">
+        <div class="text-xs font-mono text-amberBrand-accent tracking-widest uppercase">The Krishna Sales Assurance
+        </div>
+        <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide">WHY SHOPPERS TRUST US IN CHAMPA</h2>
+        <p class="text-stone-400 text-sm font-light">
+          From computerized shade dispensing to genuine warranties and doorstep delivery across Janjgir-Champa.
+        </p>
+      </div>
+
+      <!-- 4 Stack Cards -->
+      <div id="services-stack" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered via JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= REAL ROOM INSPIRATIONS ================= -->
+  <section id="ideas" class="py-20 border-b border-white/10 bg-obsidian-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <div class="text-xs font-mono text-amberBrand-accent tracking-widest uppercase mb-2">Real Space Inspiration
+          </div>
+          <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide">FINISHED ROOM GALLERY</h2>
+          <p class="text-stone-400 text-sm max-w-xl mt-2 font-light">
+            Explore authentic interior & exterior finishes. Note down any shade or texture and visit Krishna Sales in
+            Shankar Nagar for physical sample viewing.
+          </p>
+        </div>
+        <div>
+          <a id="instagram-link-btn" href="https://share.google/AkY2RAW7u3YG5uquY" target="_blank"
+            class="px-5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-stone-200 text-xs font-mono flex items-center gap-2 transition-all">
+            <i data-lucide="map-pin" class="w-4 h-4 text-peacock-cyan"></i>
+            <span>Google Business Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="ideas-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered via JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= RUNNING CUSTOMER TESTIMONIALS & TRUST MARQUEE ================= -->
+  <section id="reviews" class="py-20 border-b border-white/10 bg-obsidian-900 relative overflow-hidden">
+    <!-- Ambient glow -->
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-amberBrand-500/5 rounded-full blur-[140px] pointer-events-none">
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 relative z-10">
+
+      <!-- Section Header with Verified Google Badge -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div class="space-y-3">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-mono text-emerald-400">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Live Verified Google Customer Feedback</span>
+          </div>
+          <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide">
+            WHAT OUR CUSTOMERS SAY
+          </h2>
+          <p class="text-stone-400 text-sm max-w-xl font-light">
+            Read authentic experiences from homeowners, civil contractors, master painters, and villa developers who
+            rely on Krishna Sales for genuine paints, waterproofing, and hardware in Champa.
+          </p>
+        </div>
+
+        <!-- Google Rating Score Card & Action -->
+        <div class="flex flex-wrap items-center gap-4">
+          <div class="flex items-center gap-3 bg-obsidian-850 px-4 py-2.5 rounded-xl border border-white/10 shadow-lg">
+            <!-- Google colorful G icon -->
+            <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24">
+              <path fill="#4285F4"
+                d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z" />
+              <path fill="#34A853"
+                d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z" />
+              <path fill="#FBBC05"
+                d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.03 0 12s.45 3.82 1.25 5.42l4.03-3.15z" />
+              <path fill="#EA4335"
+                d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z" />
+            </svg>
+            <div>
+              <div class="flex items-center gap-1 text-amberBrand-400">
+                <span class="font-display text-2xl text-white font-bold leading-none">4.9</span>
+                <span class="text-xs font-mono font-bold text-amberBrand-400">★★★★★</span>
+              </div>
+              <span class="text-[11px] font-mono text-stone-400 block">380+ Verified Reviews</span>
+            </div>
+          </div>
+
+          <a href="https://share.google/AkY2RAW7u3YG5uquY" target="_blank" rel="noopener noreferrer"
+            class="px-5 py-3 rounded-xl bg-amberBrand-accent/15 hover:bg-amberBrand-accent/25 text-amberBrand-400 border border-amberBrand-accent/30 font-mono text-xs font-bold flex items-center gap-2 transition-all">
+            <i data-lucide="message-square-plus" class="w-4 h-4"></i>
+            <span>Write a Google Review</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Running Testimonials Marquee Track 1 (Left Scrolling) -->
+    <div class="relative w-full overflow-hidden mt-8 py-2">
+      <!-- Gradient Edge Fades -->
+      <div
+        class="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-obsidian-900 to-transparent z-10">
+      </div>
+      <div
+        class="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-obsidian-900 to-transparent z-10">
+      </div>
+
+      <div id="marquee-track-1" class="marquee-track flex gap-5">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+
+    <!-- Running Testimonials Marquee Track 2 (Right Scrolling) -->
+    <div class="relative w-full overflow-hidden mt-2 py-2">
+      <!-- Gradient Edge Fades -->
+      <div
+        class="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-obsidian-900 to-transparent z-10">
+      </div>
+      <div
+        class="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-obsidian-900 to-transparent z-10">
+      </div>
+
+      <div id="marquee-track-2" class="marquee-track-reverse flex gap-5">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+
+    <!-- Bottom Trust Metric Ribbons -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <div
+        class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 rounded-2xl bg-obsidian-850/80 border border-white/10 text-center font-mono">
+        <div class="border-r border-white/10 last:border-0">
+          <div class="font-display text-2xl text-amberBrand-accent">98.4%</div>
+          <span class="text-[11px] text-stone-400">Recommendation Rate</span>
+        </div>
+        <div class="border-r border-white/10 last:border-0">
+          <div class="font-display text-2xl text-emerald-400">100%</div>
+          <span class="text-[11px] text-stone-400">Original Factory Sealed</span>
+        </div>
+        <div class="border-r border-white/10 last:border-0">
+          <div class="font-display text-2xl text-peacock-cyan">2,500+</div>
+          <span class="text-[11px] text-stone-400">Computerized Shades</span>
+        </div>
+        <div>
+          <div class="font-display text-2xl text-amberBrand-400">#1 Store</div>
+          <span class="text-[11px] text-stone-400">Paints in Champa</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section id="faq" class="py-20 border-b border-white/10 bg-obsidian-950">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+
+      <div class="text-center space-y-3">
+        <div class="text-xs font-mono text-amberBrand-accent tracking-widest uppercase">Got Questions?</div>
+        <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide">FREQUENTLY ASKED QUESTIONS</h2>
+      </div>
+
+      <div id="faq-accordion" class="space-y-3">
+        <!-- Rendered via JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & CONSULTATION BOOKING ================= -->
+  <section id="contact" class="py-20 bg-obsidian-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left: Quick Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="text-xs font-mono text-amberBrand-accent tracking-widest uppercase">Direct Store Access</div>
+          <h2 class="font-display text-4xl sm:text-5xl text-white tracking-wide leading-tight">
+            GET IN TOUCH WITH KRISHNA SALES
+          </h2>
+          <p class="text-stone-400 text-sm leading-relaxed font-light">
+            Plan your home or commercial painting with our team. Fill out the quick form or message us directly on
+            WhatsApp to receive shade cards, technical advice, or contractor quotes.
+          </p>
+
+          <div class="space-y-4 pt-2 text-xs font-mono text-stone-300">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-amberBrand-accent">
+                <i data-lucide="phone-call" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="text-stone-400 block text-[10px]">PHONE CALL</span>
+                <a id="contact-phone-val" href="tel:+917067905867"
+                  class="text-white hover:text-amberBrand-accent text-sm font-bold">+91 70679 05867</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div
+                class="w-9 h-9 rounded-lg bg-whatsapp/10 border border-whatsapp/20 flex items-center justify-center text-whatsapp">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="text-stone-400 block text-[10px]">WHATSAPP DESK</span>
+                <a id="contact-wa-val" href="https://wa.me/917067905867"
+                  class="text-white hover:text-whatsapp text-sm font-bold">+91 70679 05867</a>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div
+                class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-peacock-cyan">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <span class="text-stone-400 block text-[10px]">STORE ADDRESS</span>
+                <span id="contact-addr-val" class="text-white">Manjhali Talab, Station Road, Shankar Nagar, Champa –
+                  495671</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Inquiry Form -->
+        <div class="lg:col-span-7">
+          <form id="consultation-form"
+            class="p-8 rounded-2xl bg-obsidian-850 border border-white/15 shadow-2xl space-y-5">
+            <h3 class="font-display text-2xl text-white">SEND DIRECT INQUIRY</h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="form-name" class="block text-xs font-mono text-stone-400 mb-1">Your Full Name *</label>
+                <input type="text" id="form-name" required placeholder="e.g. Ramesh Dewangan"
+                  class="w-full bg-obsidian-900 border border-white/15 focus:border-amberBrand-accent rounded-lg px-3.5 py-2.5 text-xs font-mono text-white placeholder-stone-600 focus:outline-none transition-colors" />
+              </div>
+              <div>
+                <label for="form-phone" class="block text-xs font-mono text-stone-400 mb-1">Phone Number *</label>
+                <input type="tel" id="form-phone" required placeholder="e.g. 7067905867"
+                  class="w-full bg-obsidian-900 border border-white/15 focus:border-amberBrand-accent rounded-lg px-3.5 py-2.5 text-xs font-mono text-white placeholder-stone-600 focus:outline-none transition-colors" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="form-service" class="block text-xs font-mono text-stone-400 mb-1">Service /
+                  Requirement</label>
+                <select id="form-service"
+                  class="w-full bg-obsidian-900 border border-white/15 focus:border-amberBrand-accent rounded-lg px-3.5 py-2.5 text-xs font-mono text-white focus:outline-none transition-colors">
+                  <option value="Interior Luxury Paints">Interior Luxury Paints</option>
+                  <option value="Exterior All-Weather Shield">Exterior All-Weather Shield</option>
+                  <option value="Dr. Fixit Waterproofing">Dr. Fixit Waterproofing & Damp Solution</option>
+                  <option value="Wall Putty & Primer Supplies">Wall Putty & Primer Supplies</option>
+                  <option value="Hardware Locks & Fittings">Hardware Locks & Fittings</option>
+                  <option value="UPVC Plumbing Pipes & Fittings">UPVC Plumbing Pipes & Fittings</option>
+                  <option value="Bulk Contractor Pricing">Bulk Contractor Pricing</option>
+                </select>
+              </div>
+              <div>
+                <label for="form-area" class="block text-xs font-mono text-stone-400 mb-1">Approx Carpet Area /
+                  Qty</label>
+                <input type="text" id="form-area" placeholder="e.g. 1000 sq.ft / 2 BHK"
+                  class="w-full bg-obsidian-900 border border-white/15 focus:border-amberBrand-accent rounded-lg px-3.5 py-2.5 text-xs font-mono text-white placeholder-stone-600 focus:outline-none transition-colors" />
+              </div>
+            </div>
+
+            <div>
+              <label for="form-notes" class="block text-xs font-mono text-stone-400 mb-1">Message / Specific
+                Requirements</label>
+              <textarea id="form-notes" rows="3"
+                placeholder="Tell us about your project, timeline, or specific shades you are considering..."
+                class="w-full bg-obsidian-900 border border-white/15 focus:border-amberBrand-accent rounded-lg px-3.5 py-2.5 text-xs font-mono text-white placeholder-stone-600 focus:outline-none transition-colors"></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full py-3.5 rounded-lg bg-amberBrand-accent text-black font-mono font-bold text-xs hover:brightness-110 flex items-center justify-center gap-2 transition-all shadow-lg">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Send Inquiry to Krishna Sales (WhatsApp)</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-obsidian-950 border-t border-white/10 pt-16 pb-20 md:pb-12 text-stone-400 text-xs font-mono">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Col 1: Brand Info with Logo -->
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-lg overflow-hidden bg-white p-1 border border-white/20 shrink-0">
+              <img src="assets/krishna-sales-logo.jpg" alt="Krishna Sales" class="w-full h-full object-contain" />
+            </div>
+            <span id="footer-brand" class="font-display text-xl text-white tracking-wider">KRISHNA SALES</span>
+          </div>
+          <p id="footer-desc" class="text-stone-400 text-xs font-sans leading-relaxed">
+            <strong class="text-amberBrand-accent font-bold block mb-1 text-sm">Birla Opus Official Franchise Partner</strong>
+            for interior and exterior paints, Dr. Fixit waterproofing, acrylic putties, architectural door hardware, and contractor supplies in Champa, Chhattisgarh.
+          </p>
+          <div class="text-[11px] text-amberBrand-400 font-mono">
+            ★ Rated 4.9 on Google Business Profile
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Navigation -->
+        <div class="space-y-3">
+          <h4 class="text-white font-sans text-sm font-bold uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#shop" class="hover:text-amberBrand-accent transition-colors">Store Details & Location</a></li>
+            <li><a href="#products" class="hover:text-amberBrand-accent transition-colors">Master Product Catalogue</a>
+            </li>
+            <li><a href="#budget" class="hover:text-amberBrand-accent transition-colors">Paint Cost Calculator</a></li>
+            <li><a href="#services" class="hover:text-amberBrand-accent transition-colors">Computerized Tinting</a></li>
+            <li><a href="#ideas" class="hover:text-amberBrand-accent transition-colors">Room Inspirations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Families -->
+        <div class="space-y-3">
+          <h4 class="text-white font-sans text-sm font-bold uppercase tracking-wider">Product Categories</h4>
+          <ul class="space-y-2">
+            <li><a href="#products" class="hover:text-amberBrand-accent transition-colors">Interior Luxury Emulsions</a>
+            </li>
+            <li><a href="#products" class="hover:text-amberBrand-accent transition-colors">All-Weather Exterior
+                Shields</a></li>
+            <li><a href="#products" class="hover:text-amberBrand-accent transition-colors">Dr. Fixit 2K Damp
+                Proofing</a></li>
+            <li><a href="#products" class="hover:text-amberBrand-accent transition-colors">White Cement Wall Putties</a>
+            </li>
+            <li><a href="#products" class="hover:text-amberBrand-accent transition-colors">Architectural Locks &
+                Hardware</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Store Timings & Address -->
+        <div class="space-y-3">
+          <h4 class="text-white font-sans text-sm font-bold uppercase tracking-wider">Store Visit & Hours</h4>
+          <p id="footer-address" class="text-stone-300 leading-relaxed font-sans text-xs">
+            Manjhali Talab, Station Road, Shankar Nagar, Champa, Janjgir-Champa, Chhattisgarh – 495671
+          </p>
+          <p class="text-amberBrand-accent">Mon – Sat: 8:30 AM – 8:30 PM | Sun: 9:00 AM – 6:00 PM</p>
+          <div class="pt-1 flex items-center space-x-3">
+            <a id="footer-wa-link" href="https://wa.me/917067905867" target="_blank"
+              class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center text-whatsapp transition-colors"
+              title="WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+            <a id="footer-map-link" href="https://share.google/AkY2RAW7u3YG5uquY" target="_blank"
+              class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center text-amberBrand-accent transition-colors"
+              title="Google Business Profile">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-stone-500">
+        <div>
+          © <span id="copyright-year">2026</span> Krishna Sales - Paints & Hardware. All rights reserved.
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#top" class="hover:text-stone-300 flex items-center gap-1">
+            <span>Back to top</span>
+            <i data-lucide="chevron-up" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= PRODUCT DETAIL MODAL ================= -->
+  <div id="product-modal"
+    class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div
+      class="bg-obsidian-850 border border-white/20 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative">
+      <button id="modal-close-btn"
+        class="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/60 text-stone-400 hover:text-white flex items-center justify-center border border-white/10 transition-colors z-10">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="aspect-video relative overflow-hidden bg-obsidian-950 flex items-center justify-center p-4">
+        <img id="modal-img" src="" alt="Product" class="max-h-full max-w-full object-contain" />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-obsidian-850 via-transparent to-transparent pointer-events-none">
+        </div>
+        <div class="absolute bottom-4 left-6">
+          <span id="modal-badge"
+            class="px-2.5 py-0.5 rounded bg-amberBrand-accent text-black font-mono text-[10px] font-bold uppercase"></span>
+          <h3 id="modal-title" class="font-display text-3xl sm:text-4xl text-white mt-1"></h3>
+          <p id="modal-category" class="text-xs font-mono text-amberBrand-400"></p>
+        </div>
+      </div>
+
+      <div class="p-6 space-y-5">
+        <p id="modal-desc" class="text-stone-300 text-sm leading-relaxed"></p>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono bg-obsidian-900 p-3.5 rounded-xl border border-white/10">
+          <div>
+            <span class="text-stone-500 block text-[10px]">FINISH SHEEN</span>
+            <span id="modal-sheen" class="text-white font-bold"></span>
+          </div>
+          <div>
+            <span class="text-stone-500 block text-[10px]">WARRANTY</span>
+            <span id="modal-warranty" class="text-white font-bold"></span>
+          </div>
+          <div>
+            <span class="text-stone-500 block text-[10px]">SCRUB / DURABILITY</span>
+            <span id="modal-scrub" class="text-white font-bold"></span>
+          </div>
+          <div>
+            <span class="text-stone-500 block text-[10px]">COVERAGE</span>
+            <span id="modal-coverage" class="text-white font-bold"></span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-mono uppercase text-stone-400 tracking-wider mb-2">Key Technical Highlights</h4>
+          <ul id="modal-highlights" class="space-y-1.5 text-xs text-stone-300"></ul>
+        </div>
+
+        <div class="pt-3 border-t border-white/10 flex items-center justify-end gap-3">
+          <a id="modal-official-link" href="#" target="_blank" rel="noopener noreferrer"
+            class="px-4 py-2.5 rounded-lg bg-amberBrand-accent/15 hover:bg-amberBrand-accent/25 text-amberBrand-400 border border-amberBrand-accent/30 font-mono text-xs font-semibold flex items-center justify-center gap-2 transition-all">
+            <span>View on Official Birla Opus Website ↗</span>
+          </a>
+          <button id="modal-cancel-btn"
+            class="px-4 py-2.5 rounded-lg border border-white/20 text-stone-300 hover:text-white font-mono text-xs">
+            Close
+          </button>
+          <a id="modal-wa-btn" href="#" target="_blank"
+            class="px-5 py-2.5 rounded-lg bg-whatsapp text-white hover:brightness-110 font-mono text-xs font-bold flex items-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Enquire at Krishna Sales</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PRODUCT COMPARISON MODAL ================= -->
+  <div id="compare-modal"
+    class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div
+      class="bg-obsidian-850 border border-white/20 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 space-y-6 relative">
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <div>
+          <span class="text-xs font-mono text-amberBrand-accent uppercase tracking-widest block">Side-by-Side
+            Comparison</span>
+          <h3 class="font-display text-2xl text-white">Compare Formulations</h3>
+        </div>
+        <button id="close-compare-modal-btn"
+          class="w-8 h-8 rounded-full bg-white/10 text-stone-300 hover:text-white flex items-center justify-center">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div id="compare-modal-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= LIVE SOCIAL PROOF / RECENT ACTIVITY TOAST ================= -->
+  <div id="social-proof-toast"
+    class="fixed bottom-24 sm:bottom-8 left-6 z-40 max-w-xs sm:max-w-sm p-4 rounded-2xl bg-obsidian-950/95 backdrop-blur-md border border-white/15 shadow-2xl transition-all duration-500 transform translate-y-20 opacity-0 pointer-events-none">
+    <div class="flex items-start gap-3">
+      <div
+        class="w-9 h-9 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center justify-center shrink-0 mt-0.5">
+        <i data-lucide="star" class="w-4 h-4 fill-emerald-400"></i>
+      </div>
+      <div class="space-y-1 text-xs font-mono">
+        <div class="flex items-center gap-1.5">
+          <strong id="toast-name" class="text-white font-sans text-xs">Ramesh Dewangan</strong>
+          <span
+            class="text-[9px] text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/20">Verified
+            Customer</span>
+        </div>
+        <p id="toast-text" class="text-[11px] text-stone-300 italic line-clamp-2 leading-relaxed">"Saved us over ₹12,000
+          on excess material."</p>
+        <span id="toast-loc" class="text-[9px] text-amberBrand-400 block">Shankar Nagar, Champa · 3 days ago</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FLOATING WHATSAPP PULSE BUTTON ================= -->
+  <a id="floating-whatsapp" href="https://wa.me/917067905867" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat with Krishna Sales on WhatsApp"
+    class="fixed bottom-20 sm:bottom-8 right-6 z-40 group flex items-center gap-3">
+    <div
+      class="hidden sm:block bg-obsidian-950/90 text-white font-mono text-xs px-3.5 py-1.5 rounded-full border border-white/15 shadow-xl opacity-0 group-hover:opacity-100 transition-opacity">
+      Chat with Krishna Sales
+    </div>
+    <div
+      class="relative w-14 h-14 rounded-full bg-whatsapp text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
+      <div class="absolute inset-0 rounded-full bg-whatsapp pulse-ring"></div>
+      <i data-lucide="message-circle" class="w-7 h-7 relative z-10 fill-white"></i>
+    </div>
+  </a>
+
+  <!-- ================= MOBILE BOTTOM ACTION BAR ================= -->
+  <div
+    class="fixed bottom-0 left-0 right-0 z-40 bg-obsidian-950/95 backdrop-blur-md border-t border-white/15 py-2 px-4 flex items-center justify-around md:hidden">
+    <a id="bar-call" href="tel:+917067905867"
+      class="flex flex-col items-center text-stone-300 hover:text-white text-[11px] font-mono">
+      <i data-lucide="phone" class="w-5 h-5 text-amberBrand-accent mb-0.5"></i>
+      <span>Call</span>
+    </a>
+    <a id="bar-wa" href="https://wa.me/917067905867"
+      class="flex flex-col items-center text-stone-300 hover:text-white text-[11px] font-mono">
+      <i data-lucide="message-circle" class="w-5 h-5 text-whatsapp mb-0.5"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a id="bar-calc" href="#budget"
+      class="flex flex-col items-center text-stone-300 hover:text-white text-[11px] font-mono">
+      <i data-lucide="calculator" class="w-5 h-5 text-amberBrand-400 mb-0.5"></i>
+      <span>Estimate</span>
+    </a>
+    <a id="bar-map" href="https://share.google/AkY2RAW7u3YG5uquY" target="_blank"
+      class="flex flex-col items-center text-stone-300 hover:text-white text-[11px] font-mono">
+      <i data-lucide="map-pin" class="w-5 h-5 text-peacock-cyan mb-0.5"></i>
+      <span>Location</span>
+    </a>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const C = window.SHOP_CONFIG;
+      if (!C) return;
+
+      const refreshIcons = () => {
+        if (window.lucide) window.lucide.createIcons();
+      };
+
+      const setText = (id, text) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = text;
+      };
+
+      const setAttr = (id, attr, val) => {
+        const el = document.getElementById(id);
+        if (el) el.setAttribute(attr, val);
+      };
+
+      // 1. Branding & Top Info
+      document.title = `${C.brand.name} | ${C.brand.tagline}`;
+      setText("top-badge", `${C.brand.name} · ${C.brand.badge} · ${C.brand.locationBadge}`);
+      setText("top-hours", C.location.hoursBadge);
+      setText("top-phone", C.contact.phoneDisplay);
+      setAttr("top-phone", "href", `tel:${C.contact.phoneHref}`);
+
+      setText("nav-brand-name", C.brand.name.toUpperCase());
+      setText("nav-brand-sub", C.brand.tagline);
+      setAttr("header-call-btn", "href", `tel:${C.contact.phoneHref}`);
+      setAttr("header-whatsapp-btn", "href", `https://wa.me/${C.contact.whatsappNumber}?text=${encodeURIComponent(C.contact.whatsappDefaultMessage)}`);
+
+      setText("hero-badge-tag", C.brand.badge);
+      setText("hero-location-tag", C.brand.locationBadge);
+      setText("hero-title-main", C.brand.heroHeadingMain);
+      setText("hero-title-accent", C.brand.heroHeadingAccent);
+      setText("hero-desc", C.brand.heroDescription);
+      setAttr("hero-whatsapp-link", "href", `https://wa.me/${C.contact.whatsappNumber}?text=${encodeURIComponent(C.contact.whatsappDefaultMessage)}`);
+
+      setText("hero-card-address", `${C.location.addressLine1}, ${C.location.city}`);
+      setAttr("hero-card-directions", "href", C.location.googleMapsDirectionsUrl);
+      setAttr("hero-card-call", "href", `tel:${C.contact.phoneHref}`);
+      setAttr("store-direction-btn", "href", C.location.googleMapsDirectionsUrl);
+
+      // Render Stats Bar
+      const statsContainer = document.getElementById("stats-container");
+      if (statsContainer && C.stats) {
+        statsContainer.innerHTML = C.stats.map(s => `
+          <div class="space-y-1">
+            <span class="text-xs font-mono text-stone-400 block">${s.label}</span>
+            <div class="font-display text-3xl sm:text-4xl text-amberBrand-accent">${s.value}</div>
+            <span class="text-[11px] text-stone-500 font-mono block">${s.subtext}</span>
+          </div>
+        `).join("");
+      }
+
+      // ==================== CONTINUOUS AUTOPLAY & SCROLL-PLAY ENGINE ====================
+      const setupAutoPlayVideo = (video) => {
+        if (!video) return;
+        video.defaultMuted = true;
+        video.muted = true;
+        video.volume = 0;
+        video.playsInline = true;
+        video.setAttribute("muted", "");
+        video.setAttribute("playsinline", "");
+        video.setAttribute("webkit-playsinline", "");
+        video.setAttribute("autoplay", "");
+        video.setAttribute("loop", "");
+
+        const tryPlay = () => {
+          if (!video.paused) return;
+          video.muted = true;
+          const p = video.play();
+          if (p !== undefined) p.catch(() => { });
+        };
+
+        tryPlay();
+        video.addEventListener("loadedmetadata", tryPlay);
+        video.addEventListener("loadeddata", tryPlay);
+        video.addEventListener("canplay", tryPlay);
+        video.addEventListener("canplaythrough", tryPlay);
+        document.addEventListener("visibilitychange", () => { if (!document.hidden) tryPlay(); });
+
+        if ("IntersectionObserver" in window) {
+          const obs = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) tryPlay(); });
+          }, { threshold: [0, 0.1, 0.25, 0.5, 0.75, 1.0], rootMargin: "150px 0px 150px 0px" });
+          obs.observe(video);
+        }
+
+        const checkVisibilityAndPlay = () => {
+          const rect = video.getBoundingClientRect();
+          const vh = window.innerHeight || document.documentElement.clientHeight || 800;
+          const isVisible = rect.top < vh + 200 && rect.bottom > -200 && rect.width > 0 && rect.height > 0;
+          if (isVisible && video.paused) tryPlay();
+        };
+
+        window.addEventListener("scroll", checkVisibilityAndPlay, { passive: true });
+        window.addEventListener("touchmove", checkVisibilityAndPlay, { passive: true });
+        window.addEventListener("wheel", checkVisibilityAndPlay, { passive: true });
+        window.addEventListener("resize", checkVisibilityAndPlay, { passive: true });
+        checkVisibilityAndPlay();
+      };
+
+      const heroVid = document.getElementById("hero-store-video");
+      const storeVid = document.getElementById("store-preview-video");
+      const storePreviewImg = document.getElementById("store-preview-img");
+      const storePreviewTag = document.getElementById("store-preview-tag");
+      const storePreviewTitle = document.getElementById("store-preview-title");
+      const storePreviewSub = document.getElementById("store-preview-sub");
+      const storeThumbnails = document.getElementById("store-thumbnails");
+      const storeControls = document.getElementById("store-video-controls");
+      const playBtn = document.getElementById("store-video-play-btn");
+      const playIcon = document.getElementById("store-play-icon");
+      const playText = document.getElementById("store-play-text");
+      const soundBtn = document.getElementById("store-video-sound-btn");
+      const soundText = document.getElementById("store-sound-text");
+
+      setupAutoPlayVideo(heroVid);
+      setupAutoPlayVideo(storeVid);
+
+      if (storeVid && playBtn) {
+        storeVid.addEventListener("play", () => {
+          if (playText) playText.textContent = "Pause";
+          if (playIcon) playIcon.setAttribute("data-lucide", "pause");
+          refreshIcons();
+        });
+        storeVid.addEventListener("pause", () => {
+          if (playText) playText.textContent = "Play";
+          if (playIcon) playIcon.setAttribute("data-lucide", "play");
+          refreshIcons();
+        });
+        playBtn.addEventListener("click", () => {
+          if (storeVid.paused) storeVid.play().catch(() => { });
+          else storeVid.pause();
+        });
+        storeVid.addEventListener("click", () => {
+          if (storeVid.paused) storeVid.play().catch(() => { });
+          else storeVid.pause();
+        });
+      }
+
+      if (soundBtn && storeVid) {
+        soundBtn.addEventListener("click", () => {
+          storeVid.muted = !storeVid.muted;
+          if (soundText) soundText.textContent = storeVid.muted ? "Sound Off" : "Sound On";
+        });
+      }
+
+      // Storefront Gallery Interactive Selector
+      const gallery = C.storefrontGallery || [];
+      if (storeThumbnails && gallery.length > 0) {
+        storeThumbnails.innerHTML = gallery.map((item, idx) => `
+          <button class="store-thumb-btn rounded-xl overflow-hidden aspect-[4/3] border-2 transition-all relative ${idx === 0 ? 'border-amberBrand-accent ring-2 ring-amberBrand-accent/30' : 'border-white/10 opacity-70 hover:opacity-100'}" data-index="${idx}">
+            <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover" />
+          </button>
+        `).join("");
+
+        document.querySelectorAll(".store-thumb-btn").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const idx = parseInt(btn.dataset.index);
+            const item = gallery[idx];
+            if (!item) return;
+
+            document.querySelectorAll(".store-thumb-btn").forEach(b => {
+              b.classList.remove("border-amberBrand-accent", "ring-2", "ring-amberBrand-accent/30");
+              b.classList.add("border-white/10", "opacity-70");
+            });
+            btn.classList.add("border-amberBrand-accent", "ring-2", "ring-amberBrand-accent/30");
+            btn.classList.remove("border-white/10", "opacity-70");
+
+            if (item.video && storeVid) {
+              if (storePreviewImg) storePreviewImg.classList.add("hidden");
+              storeVid.classList.remove("hidden");
+              if (storeControls) storeControls.classList.remove("hidden");
+              storePreviewTag.textContent = item.tag || "Storefront Video Tour";
+              storePreviewTitle.textContent = item.title;
+              storePreviewSub.textContent = item.subtitle;
+              storeVid.currentTime = 0;
+              storeVid.play().catch(() => { });
+            } else {
+              if (storeVid) {
+                storeVid.pause();
+                storeVid.classList.add("hidden");
+              }
+              if (storeControls) storeControls.classList.add("hidden");
+              if (storePreviewImg) {
+                storePreviewImg.classList.remove("hidden");
+                storePreviewImg.style.opacity = '0';
+                storePreviewImg.src = item.image;
+                setTimeout(() => {
+                  storePreviewTag.textContent = item.tag;
+                  storePreviewTitle.textContent = item.title;
+                  storePreviewSub.textContent = item.subtitle;
+                  storePreviewImg.style.opacity = '1';
+                }, 150);
+              }
+            }
+          });
+        });
+      }
+
+      // Store Details & Map
+      setText("store-hours-weekday", C.location.hoursWeekday);
+      setText("store-hours-sunday", C.location.hoursSunday);
+      setText("store-phone-link", C.contact.phoneDisplay);
+      setAttr("store-phone-link", "href", `tel:${C.contact.phoneHref}`);
+      setText("store-wa-link", `WhatsApp: ${C.contact.whatsappDisplay}`);
+      setAttr("store-wa-link", "href", `https://wa.me/${C.contact.whatsappNumber}`);
+      setAttr("store-map-iframe", "src", C.location.googleMapsEmbedUrl);
+
+      // ================= 1. ATMOSPHERIC HUES / ROOM COLOR HARMONIZER =================
+      const harmonizerData = window.COLOR_HARMONIZER || { signatureShades: [], families: [] };
+      const tonalFamilies = harmonizerData.families || [];
+      const signatureShades = harmonizerData.signatureShades || [];
+
+      let activeFamilyName = "Whites";
+      let activeShadeIndex = 0;
+
+      const familyFocusCard = document.getElementById("family-focus-card");
+      const focusFamilyName = document.getElementById("focus-family-name");
+      const focusFamilyLink = document.getElementById("focus-family-link");
+      const tonalFamiliesList = document.getElementById("tonal-families-list");
+      const roomShadeFigure = document.getElementById("room-shade-figure");
+      const roomShadeWash = document.getElementById("room-shade-wash");
+      const roomShadeCaption = document.getElementById("room-shade-caption");
+      const swatchesRow = document.getElementById("swatches-row");
+      const harmonizerWaBtn = document.getElementById("harmonizer-wa-btn");
+
+      const applyShade = (shade) => {
+        if (!shade) return;
+        if (roomShadeFigure) roomShadeFigure.style.setProperty("--room-shade", shade.hex);
+        if (roomShadeWash) roomShadeWash.style.backgroundColor = shade.hex;
+        if (roomShadeCaption) roomShadeCaption.textContent = `${shade.name} · ${shade.code}`;
+
+        document.querySelectorAll(".swatch").forEach(btn => {
+          const isMatch = btn.dataset.code === shade.code;
+          btn.classList.toggle("active", isMatch);
+          btn.setAttribute("aria-pressed", String(isMatch));
+        });
+      };
+
+      const setTonalFamily = (familyName, updateRoom = true) => {
+        activeFamilyName = familyName;
+        const fam = tonalFamilies.find(f => f.name === familyName) || tonalFamilies[0];
+        if (!fam) return;
+
+        if (familyFocusCard) {
+          familyFocusCard.style.setProperty("--family-tone", fam.tone);
+          familyFocusCard.style.setProperty("--family-text", fam.text);
+        }
+        if (focusFamilyName) focusFamilyName.textContent = fam.name;
+        const waHref = `https://wa.me/${C.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Krishna Sales! I am interested in exploring the ${fam.name} colour family for my rooms.`)}`;
+        if (focusFamilyLink) focusFamilyLink.href = waHref;
+        if (harmonizerWaBtn) harmonizerWaBtn.href = waHref;
+
+        document.querySelectorAll(".colour-family-list button").forEach(btn => {
+          const isSelected = btn.dataset.family === familyName;
+          btn.classList.toggle("active", isSelected);
+          const em = btn.querySelector("em");
+          if (em) em.textContent = isSelected ? "Selected" : "Select family";
+        });
+
+        if (updateRoom) {
+          const matchingShade = signatureShades.find(s => s.family === familyName);
+          if (matchingShade) {
+            applyShade(matchingShade);
+          } else {
+            // Apply the family tone directly to the room wash even for families without a signature swatch
+            if (roomShadeFigure) roomShadeFigure.style.setProperty("--room-shade", fam.tone);
+            if (roomShadeWash) roomShadeWash.style.backgroundColor = fam.tone;
+            if (roomShadeCaption) roomShadeCaption.textContent = `${fam.name} · Tonal Family`;
+            document.querySelectorAll(".swatch").forEach(btn => {
+              btn.classList.remove("active");
+              btn.setAttribute("aria-pressed", "false");
+            });
+          }
+        }
+      };
+
+      // Render 10 Tonal Families buttons
+      if (tonalFamiliesList && tonalFamilies.length > 0) {
+        tonalFamiliesList.innerHTML = tonalFamilies.map(f => `
+          <button type="button" class="${f.name === activeFamilyName ? 'active' : ''}" data-family="${f.name}">
+            <span style="background: ${f.tone};"></span>
+            <strong>${f.name}</strong>
+            <em>${f.name === activeFamilyName ? 'Selected' : 'Select family'}</em>
+          </button>
+        `).join("");
+
+        tonalFamiliesList.querySelectorAll("button").forEach(btn => {
+          btn.addEventListener("click", () => {
+            setTonalFamily(btn.dataset.family, true);
+          });
+        });
+      }
+
+      // Render 6 Signature Swatches
+      if (swatchesRow && signatureShades.length > 0) {
+        swatchesRow.innerHTML = signatureShades.map((s, idx) => `
+          <button type="button" class="swatch ${idx === 0 ? 'active' : ''}" data-code="${s.code}" style="--swatch: ${s.hex}; --text: ${s.textColor};" aria-pressed="${idx === 0}">
+            <span class="swatch-code">${s.code}</span>
+            <span class="swatch-name">${s.name}</span>
+            <span class="swatch-index">0${idx + 1} / 0${signatureShades.length}</span>
+          </button>
+        `).join("");
+
+        swatchesRow.querySelectorAll(".swatch").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const found = signatureShades.find(s => s.code === btn.dataset.code);
+            if (found) {
+              applyShade(found);
+              setTonalFamily(found.family, false);
+            }
+          });
+        });
+      }
+
+      // Auto cycle room shade every 5.5 seconds
+      if (signatureShades.length > 0) {
+        setInterval(() => {
+          activeShadeIndex = (activeShadeIndex + 1) % signatureShades.length;
+          const currentShade = signatureShades[activeShadeIndex];
+          applyShade(currentShade);
+          setTonalFamily(currentShade.family, false);
+        }, 5500);
+
+        applyShade(signatureShades[0]);
+        setTonalFamily("Whites", false);
+      }
+
+      // ================= 2. MASTER PRODUCT CATALOG (124 FORMULATIONS) MULTI-PAGE =================
+      const masterProducts = window.MASTER_PRODUCTS || C.products || [];
+      const categoryPills = document.getElementById("category-pills");
+      const productsGrid = document.getElementById("products-grid");
+      const productsPagination = document.getElementById("products-pagination");
+      const productsCountBadge = document.getElementById("products-count-badge");
+      const catalogSearch = document.getElementById("catalog-search");
+      const catalogSort = document.getElementById("catalog-sort");
+      const compareTray = document.getElementById("compare-tray");
+      const compareCount = document.getElementById("compare-count");
+      const openCompareModalBtn = document.getElementById("open-compare-modal-btn");
+      const clearCompareBtn = document.getElementById("clear-compare-btn");
+      const compareModal = document.getElementById("compare-modal");
+      const compareModalGrid = document.getElementById("compare-modal-grid");
+      const closeCompareModalBtn = document.getElementById("close-compare-modal-btn");
+      const favouritesCountPill = document.getElementById("favourites-count-pill");
+      const favCountNum = document.getElementById("fav-count-num");
+
+      let currentCat = "all";
+      let searchStr = "";
+      let currentSort = "featured";
+      let currentPage = 1;
+      const itemsPerPage = 12;
+
+      const favouritesSet = new Set();
+      const compareSet = new Set();
+
+      // Extract unique categories with exact counts
+      const categoryCounts = {};
+      masterProducts.forEach(p => {
+        categoryCounts[p.category] = (categoryCounts[p.category] || 0) + 1;
+      });
+
+      const catalogCategories = [
+        { id: "all", name: "All Formulations", count: masterProducts.length },
+        { id: "Interior Paints", name: "Interior Paints", count: categoryCounts["Interior Paints"] || 0 },
+        { id: "Exterior Paints", name: "Exterior Paints", count: categoryCounts["Exterior Paints"] || 0 },
+        { id: "Waterproofing", name: "Waterproofing", count: categoryCounts["Waterproofing"] || 0 },
+        { id: "Enamels", name: "Enamels", count: categoryCounts["Enamels"] || 0 },
+        { id: "Wood Finishes", name: "Wood Finishes", count: categoryCounts["Wood Finishes"] || 0 },
+        { id: "Tools", name: "Tools", count: categoryCounts["Tools"] || 0 },
+        { id: "Wallpapers", name: "Wallpapers", count: categoryCounts["Wallpapers"] || 0 },
+        { id: "Aerosols", name: "Aerosols", count: categoryCounts["Aerosols"] || 0 }
+      ].filter(c => c.count > 0 || c.id === "all");
+
+      // Render Category Pills
+      const renderCatPills = () => {
+        if (!categoryPills) return;
+        categoryPills.innerHTML = catalogCategories.map(c => `
+          <button class="cat-pill-btn px-4 py-2 rounded-full text-xs font-mono tracking-wide transition-all ${c.id === currentCat ? 'bg-amberBrand-accent text-black font-bold shadow-lg scale-105' : 'bg-white/5 text-stone-300 hover:bg-white/10 border border-white/10'}" data-cat="${c.id}">
+            <span>${c.name}</span>
+            <span class="ml-1 text-[10px] opacity-75 font-mono">(${c.count})</span>
+          </button>
+        `).join("");
+
+        document.querySelectorAll(".cat-pill-btn").forEach(btn => {
+          btn.addEventListener("click", () => {
+            currentCat = btn.dataset.cat;
+            currentPage = 1;
+            renderCatPills();
+            renderCatalog();
+          });
+        });
+      };
+
+      // Filter and sort products
+      const getFilteredProducts = () => {
+        let list = masterProducts.filter(p => {
+          const matchCat = (currentCat === "all") || (p.category === currentCat);
+          const matchSearch = !searchStr ||
+            p.name.toLowerCase().includes(searchStr) ||
+            p.copy.toLowerCase().includes(searchStr) ||
+            p.family.toLowerCase().includes(searchStr) ||
+            p.category.toLowerCase().includes(searchStr);
+          return matchCat && matchSearch;
+        });
+
+        if (currentSort === "name-asc") {
+          list.sort((a, b) => a.name.localeCompare(b.name));
+        } else if (currentSort === "name-desc") {
+          list.sort((a, b) => b.name.localeCompare(a.name));
+        } else if (currentSort === "family") {
+          list.sort((a, b) => a.family.localeCompare(b.family));
+        }
+
+        return list;
+      };
+
+      // Render Catalog Grid with Multi-Page Pagination
+      const renderCatalog = () => {
+        if (!productsGrid) return;
+
+        const filtered = getFilteredProducts();
+        const totalItems = filtered.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
+
+        if (currentPage > totalPages) currentPage = totalPages;
+        if (currentPage < 1) currentPage = 1;
+
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
+        const pageItems = filtered.slice(startIndex, endIndex);
+
+        // Update count badge
+        if (productsCountBadge) {
+          productsCountBadge.textContent = totalItems > 0
+            ? `SHOWING ${startIndex + 1}–${endIndex} OF ${totalItems} MASTER FORMULATIONS`
+            : "NO FORMULATIONS FOUND";
+        }
+
+        if (totalItems === 0) {
+          productsGrid.innerHTML = `
+            <div class="col-span-full py-16 text-center text-stone-400 font-mono text-sm space-y-3">
+              <i data-lucide="package-search" class="w-12 h-12 mx-auto text-stone-600"></i>
+              <p>No formulations found matching "${searchStr}".</p>
+              <button onclick="document.getElementById('catalog-search').value=''; window.resetMasterFilter();" class="px-4 py-2 rounded bg-white/10 text-white text-xs hover:bg-white/20">Clear Search</button>
+            </div>
+          `;
+          if (productsPagination) productsPagination.innerHTML = "";
+          refreshIcons();
+          return;
+        }
+
+        // Render Cards (matching user video)
+        productsGrid.innerHTML = pageItems.map(p => {
+          const isFav = favouritesSet.has(p.slug);
+          const isCompare = compareSet.has(p.slug);
+
+          return `
+            <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 hover:border-amberBrand-accent/40 bg-obsidian-850/90 shadow-xl relative" data-slug="${p.slug}">
+              
+              <!-- Card Top Header: Brand & Action Icons -->
+              <div class="p-4 pb-0 flex items-center justify-between z-10">
+                <div class="flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-black/60 backdrop-blur-md border border-white/10 text-[10px] font-mono text-amberBrand-400">
+                  <span class="font-bold tracking-wider">BIRLA OPUS</span>
+                  <span class="text-stone-500">·</span>
+                  <span class="text-stone-300 font-sans">${p.family}</span>
+                </div>
+
+                <div class="flex items-center gap-1.5">
+                  <button class="fav-toggle-btn p-1.5 rounded-lg bg-black/60 text-stone-400 hover:text-pink-400 transition-colors" data-slug="${p.slug}" title="Save formulation">
+                    <i data-lucide="heart" class="w-3.5 h-3.5 ${isFav ? 'fill-pink-500 text-pink-500' : ''}"></i>
+                  </button>
+                  <button class="compare-toggle-btn p-1.5 rounded-lg bg-black/60 ${isCompare ? 'text-amberBrand-accent bg-amberBrand-accent/20' : 'text-stone-400 hover:text-white'} transition-colors" data-slug="${p.slug}" title="Compare formulation">
+                    <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Product Image Showcase with Fallback -->
+              <div class="aspect-[4/3] p-4 flex items-center justify-center relative overflow-hidden">
+                <img src="${p.imageUrl}" alt="${p.name}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-2xl" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80';" />
+              </div>
+
+              <!-- Color Accent Bar -->
+              <div class="h-1 w-full" style="background-color: ${p.colour || '#e5a93b'};"></div>
+
+              <!-- Card Content Details -->
+              <div class="p-5 pt-4 flex-1 flex flex-col justify-between space-y-4">
+                <div class="space-y-1.5">
+                  <span class="text-[10px] font-mono text-peacock-cyan uppercase tracking-wider block">${p.category}</span>
+                  <h4 class="font-display text-2xl text-white group-hover:text-amberBrand-accent transition-colors leading-tight">${p.name}</h4>
+                  <p class="text-xs text-stone-300 font-light line-clamp-2 leading-relaxed">${p.copy}</p>
+                </div>
+
+                <div class="pt-3 border-t border-white/10 flex items-center justify-between gap-2">
+                  <button class="view-master-detail-btn flex-1 py-2 px-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-mono text-xs flex items-center justify-center gap-1.5 transition-colors" data-slug="${p.slug}">
+                    <span>Official Details</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                  </button>
+                  <a href="https://wa.me/${C.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Krishna Sales, I want to inquire about *${p.name}* (${p.category}, Family: ${p.family}). Please share price and stock at Champa store.`)}" target="_blank" class="p-2 rounded-lg bg-whatsapp hover:brightness-110 text-white transition-colors" title="Inquire on WhatsApp">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          `;
+        }).join("");
+
+        // Render Pagination Controls
+        if (productsPagination && totalPages > 1) {
+          let pagesHtml = `
+            <button class="page-nav-btn px-3 py-1.5 rounded-lg border border-white/10 text-xs font-mono text-stone-300 hover:text-white hover:bg-white/10 disabled:opacity-30 disabled:pointer-events-none" data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}>
+              &larr; Prev
+            </button>
+          `;
+
+          // Generate page pills with ellipsis
+          for (let i = 1; i <= totalPages; i++) {
+            if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+              pagesHtml += `
+                <button class="page-num-btn px-3 py-1.5 rounded-lg text-xs font-mono transition-all ${i === currentPage ? 'bg-amberBrand-accent text-black font-bold shadow-md' : 'bg-white/5 border border-white/10 text-stone-300 hover:bg-white/10'}" data-page="${i}">
+                  ${i}
+                </button>
+              `;
+            } else if (i === currentPage - 3 || i === currentPage + 3) {
+              pagesHtml += `<span class="px-1 text-stone-500 font-mono">...</span>`;
+            }
+          }
+
+          pagesHtml += `
+            <button class="page-nav-btn px-3 py-1.5 rounded-lg border border-white/10 text-xs font-mono text-stone-300 hover:text-white hover:bg-white/10 disabled:opacity-30 disabled:pointer-events-none" data-page="${currentPage + 1}" ${currentPage === totalPages ? 'disabled' : ''}>
+              Next &rarr;
+            </button>
+          `;
+
+          productsPagination.innerHTML = pagesHtml;
+
+          document.querySelectorAll(".page-num-btn, .page-nav-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+              const targetPage = parseInt(btn.dataset.page);
+              if (!isNaN(targetPage) && targetPage >= 1 && targetPage <= totalPages) {
+                currentPage = targetPage;
+                renderCatalog();
+                document.getElementById("products")?.scrollIntoView({ behavior: "smooth" });
+              }
+            });
+          });
+        } else if (productsPagination) {
+          productsPagination.innerHTML = "";
+        }
+
+        // Attach Card Listeners (Details, Favourites, Compare)
+        document.querySelectorAll(".view-master-detail-btn").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const slug = btn.dataset.slug;
+            const product = masterProducts.find(p => p.slug === slug);
+            if (product) openMasterProductModal(product);
+          });
+        });
+
+        document.querySelectorAll(".fav-toggle-btn").forEach(btn => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const slug = btn.dataset.slug;
+            if (favouritesSet.has(slug)) {
+              favouritesSet.delete(slug);
+            } else {
+              favouritesSet.add(slug);
+            }
+            updateFavPill();
+            renderCatalog();
+          });
+        });
+
+        document.querySelectorAll(".compare-toggle-btn").forEach(btn => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const slug = btn.dataset.slug;
+            if (compareSet.has(slug)) {
+              compareSet.delete(slug);
+            } else {
+              if (compareSet.size >= 3) {
+                alert("You can compare up to 3 formulations at once.");
+                return;
+              }
+              compareSet.add(slug);
+            }
+            updateCompareTray();
+            renderCatalog();
+          });
+        });
+
+        refreshIcons();
+      };
+
+      const updateFavPill = () => {
+        if (!favouritesCountPill || !favCountNum) return;
+        if (favouritesSet.size > 0) {
+          favouritesCountPill.classList.remove("hidden");
+          favouritesCountPill.classList.add("flex");
+          favCountNum.textContent = favouritesSet.size;
+        } else {
+          favouritesCountPill.classList.add("hidden");
+          favouritesCountPill.classList.remove("flex");
+        }
+      };
+
+      const updateCompareTray = () => {
+        if (!compareTray || !compareCount) return;
+        if (compareSet.size >= 2) {
+          compareTray.classList.remove("hidden");
+          compareTray.classList.add("flex");
+          compareCount.textContent = compareSet.size;
+        } else {
+          compareTray.classList.add("hidden");
+          compareTray.classList.remove("flex");
+        }
+      };
+
+      if (clearCompareBtn) {
+        clearCompareBtn.addEventListener("click", () => {
+          compareSet.clear();
+          updateCompareTray();
+          renderCatalog();
+        });
+      }
+
+      // Compare Modal
+      if (openCompareModalBtn && compareModal && compareModalGrid) {
+        openCompareModalBtn.addEventListener("click", () => {
+          const selectedList = masterProducts.filter(p => compareSet.has(p.slug));
+          if (selectedList.length === 0) return;
+
+          compareModalGrid.innerHTML = selectedList.map(p => `
+            <div class="bg-obsidian-900 rounded-xl border border-white/10 p-5 space-y-4">
+              <div class="aspect-square p-4 flex items-center justify-center bg-obsidian-950 rounded-lg">
+                <img src="${p.imageUrl}" alt="${p.name}" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div>
+                <span class="text-[10px] font-mono text-amberBrand-accent uppercase">${p.category}</span>
+                <h4 class="font-display text-xl text-white mt-1">${p.name}</h4>
+                <p class="text-xs text-stone-400 mt-2 line-clamp-3">${p.copy}</p>
+              </div>
+              <div class="text-xs font-mono space-y-2 pt-3 border-t border-white/10 text-stone-300">
+                <div class="flex justify-between">
+                  <span class="text-stone-500">Family:</span>
+                  <span class="text-white">${p.family}</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-stone-500">Tone Base:</span>
+                  <span class="flex items-center gap-1.5">
+                    <span class="w-3 h-3 rounded-full border border-white/20" style="background-color: ${p.colour};"></span>
+                    <span class="text-stone-400">${p.colour}</span>
+                  </span>
+                </div>
+              </div>
+              <a href="https://wa.me/${C.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Krishna Sales, I want to inquire about *${p.name}*.`)}" target="_blank" class="w-full py-2.5 rounded-lg bg-whatsapp text-white font-mono text-xs font-bold flex items-center justify-center gap-2">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                <span>Order via WhatsApp</span>
+              </a>
+            </div>
+          `).join("");
+
+          compareModal.classList.remove("hidden");
+          compareModal.classList.add("flex");
+          refreshIcons();
+        });
+      }
+
+      if (closeCompareModalBtn && compareModal) {
+        closeCompareModalBtn.addEventListener("click", () => {
+          compareModal.classList.add("hidden");
+          compareModal.classList.remove("flex");
+        });
+      }
+
+      window.resetMasterFilter = () => {
+        currentCat = "all";
+        searchStr = "";
+        currentSort = "featured";
+        currentPage = 1;
+        renderCatPills();
+        renderCatalog();
+      };
+
+      if (catalogSearch) {
+        catalogSearch.addEventListener("input", (e) => {
+          searchStr = e.target.value.toLowerCase().trim();
+          currentPage = 1;
+          renderCatalog();
+        });
+      }
+
+      if (catalogSort) {
+        catalogSort.addEventListener("change", (e) => {
+          currentSort = e.target.value;
+          currentPage = 1;
+          renderCatalog();
+        });
+      }
+
+      renderCatPills();
+      renderCatalog();
+
+      // Master Product Modal Handler
+      const modal = document.getElementById("product-modal");
+      const openMasterProductModal = (p) => {
+        if (!modal) return;
+        document.getElementById("modal-img").src = p.imageUrl;
+        document.getElementById("modal-badge").textContent = `${p.family} Series`;
+        document.getElementById("modal-title").textContent = p.name;
+        document.getElementById("modal-category").textContent = `${p.category} · Official Birla Opus Master Formulation`;
+        document.getElementById("modal-desc").textContent = p.copy;
+        document.getElementById("modal-sheen").textContent = p.family === "One" ? "Ultra-Luxury Sheen" : "Rich Velvet Washable";
+        document.getElementById("modal-warranty").textContent = p.category.includes("Exterior") ? "10-Year Protection" : "8-Year Durability";
+        document.getElementById("modal-scrub").textContent = "50,000+ Wash Cycles";
+        document.getElementById("modal-coverage").textContent = "130 – 160 sq.ft / Litre";
+
+        const hlList = document.getElementById("modal-highlights");
+        hlList.innerHTML = `
+          <li class="flex items-center gap-2">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+            <span>Active stain-repellent & dirt-pick-up barrier</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+            <span>Computerized shade repeatability across all 2,500+ color cards</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0"></i>
+            <span>100% factory sealed original container with manufacturer warranty</span>
+          </li>
+        `;
+
+        const waBtn = document.getElementById("modal-wa-btn");
+        waBtn.href = `https://wa.me/${C.contact.whatsappNumber}?text=${encodeURIComponent(`Hello Krishna Sales, I am inquiring about *${p.name}* (${p.category}, Family: ${p.family}). Please share price and stock at your Champa store.`)}`;
+
+        const officialLink = document.getElementById("modal-official-link");
+        if (officialLink) {
+          officialLink.href = p.sourceUrl || "https://www.birlaopus.com/paint-products";
+          officialLink.setAttribute("title", `Official Birla Opus product page for ${p.name}`);
+        }
+
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        refreshIcons();
+      };
+
+      const closeModal = () => {
+        if (!modal) return;
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      };
+
+      document.getElementById("modal-close-btn")?.addEventListener("click", closeModal);
+      document.getElementById("modal-cancel-btn")?.addEventListener("click", closeModal);
+      modal?.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      // Calculator Logic
+      const calcAreaRange = document.getElementById("calc-area-range");
+      const calcAreaInput = document.getElementById("calc-area-input");
+      let selectedType = "interior-repaint";
+      let selectedTier = "luxury";
+
+      const updateCalculator = () => {
+        const area = parseInt(calcAreaInput.value) || 900;
+
+        let coverageSqFtPerLitre = 140; // 2 coats
+        let pricePerLitre = 480;
+        let recoName = "Royale Luxury Washable Emulsion";
+
+        if (selectedTier === "luxury") {
+          pricePerLitre = 520;
+          recoName = "Royale Luxury Washable Emulsion";
+        } else if (selectedTier === "premium") {
+          pricePerLitre = 380;
+          recoName = "Premium Satin Interior Emulsion";
+        } else {
+          pricePerLitre = 240;
+          recoName = "Tractor Fresh Distemper & Emulsion";
+        }
+
+        if (selectedType === "exterior-facade") {
+          coverageSqFtPerLitre = 65;
+          pricePerLitre = (selectedTier === "luxury") ? 590 : 420;
+          recoName = "All-Weather Ultimate Exterior Shield";
+        }
+
+        const topcoatLitres = Math.ceil(area / coverageSqFtPerLitre);
+        const topcoatMax = Math.ceil(topcoatLitres * 1.15);
+        const primerLitres = Math.ceil(area / 180);
+        const puttyKg = Math.ceil(area * 0.05);
+
+        const estCostMin = Math.round(topcoatLitres * pricePerLitre + primerLitres * 150 + puttyKg * 30);
+        const estCostMax = Math.round(estCostMin * 1.25);
+
+        setText("calc-topcoat-litres", `${topcoatLitres} – ${topcoatMax} Litres`);
+        setText("calc-product-recommendation", recoName);
+        setText("calc-primer-litres", `${primerLitres} – ${primerLitres + 2} Litres`);
+        setText("calc-putty-kg", `${puttyKg} Kg`);
+        setText("calc-cost-estimate", `₹ ${estCostMin.toLocaleString('en-IN')} – ₹ ${estCostMax.toLocaleString('en-IN')}`);
+
+        const waText = `Hello Krishna Sales, I calculated paint for my ${area} sq.ft (${selectedType}, ${selectedTier} grade) in Champa. It estimated ~${topcoatLitres}L of ${recoName}. Can you give me your best quote?`;
+        setAttr("calc-whatsapp-btn", "href", `https://wa.me/${C.contact.whatsappNumber}?text=${encodeURIComponent(waText)}`);
+      };
+
+      if (calcAreaRange && calcAreaInput) {
+        calcAreaRange.addEventListener("input", (e) => {
+          calcAreaInput.value = e.target.value;
+          updateCalculator();
+        });
+        calcAreaInput.addEventListener("input", (e) => {
+          calcAreaRange.value = e.target.value;
+          updateCalculator();
+        });
+      }
+
+      document.querySelectorAll(".calc-type-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".calc-type-btn").forEach(b => {
+            b.classList.remove("border-amberBrand-accent", "bg-amberBrand-accent/15", "text-amberBrand-accent", "font-bold");
+            b.classList.add("border-white/15", "bg-obsidian-900", "text-stone-300");
+          });
+          btn.classList.add("border-amberBrand-accent", "bg-amberBrand-accent/15", "text-amberBrand-accent", "font-bold");
+          btn.classList.remove("border-white/15", "bg-obsidian-900", "text-stone-300");
+          selectedType = btn.dataset.type;
+          updateCalculator();
+        });
+      });
+
+      document.querySelectorAll(".calc-tier-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".calc-tier-btn").forEach(b => {
+            b.classList.remove("border-amberBrand-accent", "bg-amberBrand-accent/15", "text-amberBrand-accent", "font-bold");
+            b.classList.add("border-white/15", "bg-obsidian-900", "text-stone-300");
+          });
+          btn.classList.add("border-amberBrand-accent", "bg-amberBrand-accent/15", "text-amberBrand-accent", "font-bold");
+          btn.classList.remove("border-white/15", "bg-obsidian-900", "text-stone-300");
+          selectedTier = btn.dataset.tier;
+          updateCalculator();
+        });
+      });
+
+      updateCalculator();
+
+      // Render Service Journey Stack
+      const servicesStack = document.getElementById("services-stack");
+      if (servicesStack && C.services) {
+        servicesStack.innerHTML = C.services.map(s => `
+          <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-amberBrand-accent/40 transition-colors">
+            <div class="flex items-center justify-between">
+              <span class="font-display text-4xl text-amberBrand-accent/40">${s.step}</span>
+              <div class="w-10 h-10 rounded-lg bg-amberBrand-accent/10 border border-amberBrand-accent/20 flex items-center justify-center text-amberBrand-accent">
+                <i data-lucide="${s.icon || 'shield'}" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <h4 class="font-display text-xl text-white leading-tight">${s.title}</h4>
+            <p class="text-xs text-amberBrand-400 font-mono">${s.tagline}</p>
+            <p class="text-xs text-stone-400 font-light leading-relaxed">${s.description}</p>
+          </div>
+        `).join("");
+      }
+
+      // Render Room Ideas
+      const ideasGrid = document.getElementById("ideas-grid");
+      if (ideasGrid && C.ideas) {
+        ideasGrid.innerHTML = C.ideas.map(i => `
+          <div class="glass-card rounded-2xl overflow-hidden group">
+            <div class="aspect-[4/3] overflow-hidden relative">
+              <img src="${i.image}" alt="${i.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-transparent"></div>
+              <span class="absolute top-3 right-3 bg-obsidian-950/80 px-2 py-0.5 rounded text-[10px] font-mono text-stone-300 border border-white/10">
+                ${i.room}
+              </span>
+            </div>
+            <div class="p-5 space-y-1">
+              <h4 class="font-display text-lg text-white">${i.title}</h4>
+              <p class="text-xs text-amberBrand-accent font-mono">${i.shade}</p>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      // Render Running Testimonials Marquees
+      const track1 = document.getElementById("marquee-track-1");
+      const track2 = document.getElementById("marquee-track-2");
+      const reviews = C.reviews || [];
+
+      if (reviews.length > 0) {
+        const createCard = (r) => `
+          <div class="w-[320px] sm:w-[380px] shrink-0 p-5 rounded-2xl glass-card border border-white/10 hover:border-amberBrand-accent/50 hover:bg-obsidian-850/90 transition-all flex flex-col justify-between space-y-4">
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amberBrand-400">
+                  ${Array(r.rating).fill('<i data-lucide="star" class="w-3.5 h-3.5 fill-amberBrand-400"></i>').join('')}
+                </div>
+                <span class="text-[10px] font-mono text-stone-500">${r.date}</span>
+              </div>
+              <p class="text-xs text-stone-300 font-light leading-relaxed italic line-clamp-3">"${r.text}"</p>
+              ${r.project ? `<span class="inline-block text-[10px] font-mono text-peacock-cyan bg-peacock-cyan/10 px-2 py-0.5 rounded border border-peacock-cyan/20">${r.project}</span>` : ''}
+            </div>
+
+            <div class="pt-3 border-t border-white/10 flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-amberBrand-500 to-peacock-cyan text-black font-display text-sm font-bold flex items-center justify-center shrink-0">
+                  ${r.initials || r.name.charAt(0)}
+                </div>
+                <div>
+                  <strong class="text-white block font-sans text-xs leading-tight">${r.name}</strong>
+                  <span class="text-[10px] font-mono text-stone-400">${r.role} · ${r.location || 'Champa'}</span>
+                </div>
+              </div>
+              <span class="text-[9px] font-mono text-emerald-400 flex items-center gap-1 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20 shrink-0">
+                <i data-lucide="check-circle" class="w-3 h-3"></i> Verified
+              </span>
+            </div>
+          </div>
+        `;
+
+        // Split reviews across two tracks for variety
+        const set1 = reviews.slice(0, Math.ceil(reviews.length / 2));
+        const set2 = reviews.slice(Math.ceil(reviews.length / 2));
+
+        // Duplicate each set so that the marquee loops smoothly without jump
+        const loopSet1 = [...set1, ...set1, ...set1];
+        const loopSet2 = [...set2, ...set2, ...set2];
+
+        if (track1) track1.innerHTML = loopSet1.map(createCard).join("");
+        if (track2) track2.innerHTML = loopSet2.map(createCard).join("");
+        refreshIcons();
+
+        // Cycling Live Social Proof Toast at bottom-left
+        const toast = document.getElementById("social-proof-toast");
+        const toastName = document.getElementById("toast-name");
+        const toastText = document.getElementById("toast-text");
+        const toastLoc = document.getElementById("toast-loc");
+
+        if (toast && reviews.length > 0) {
+          let reviewIdx = 0;
+          const showNextReviewToast = () => {
+            const r = reviews[reviewIdx];
+            if (!r) return;
+            if (toastName) toastName.textContent = r.name;
+            if (toastText) toastText.textContent = `"${r.text}"`;
+            if (toastLoc) toastLoc.textContent = `${r.location || 'Champa'} · ${r.project || 'Paints & Hardware'}`;
+
+            toast.classList.remove("translate-y-20", "opacity-0");
+            toast.classList.add("translate-y-0", "opacity-100");
+
+            setTimeout(() => {
+              toast.classList.remove("translate-y-0", "opacity-100");
+              toast.classList.add("translate-y-20", "opacity-0");
+            }, 5500);
+
+            reviewIdx = (reviewIdx + 1) % reviews.length;
+          };
+
+          // Start after 2.5s and cycle every 9s
+          setTimeout(showNextReviewToast, 2500);
+          setInterval(showNextReviewToast, 9500);
+        }
+      }
+
+      // Render FAQ Accordion
+      const faqAccordion = document.getElementById("faq-accordion");
+      if (faqAccordion && C.faqs) {
+        faqAccordion.innerHTML = C.faqs.map((f, idx) => `
+          <div class="border border-white/10 rounded-xl bg-obsidian-850 overflow-hidden">
+            <button class="faq-btn w-full p-4 text-left flex items-center justify-between text-sm font-sans font-medium text-white hover:text-amberBrand-accent transition-colors" data-index="${idx}">
+              <span>${f.q}</span>
+              <i data-lucide="chevron-down" class="faq-chevron w-4 h-4 text-stone-400 shrink-0 transition-transform"></i>
+            </button>
+            <div class="faq-answer hidden px-4 pb-4 text-xs font-mono text-stone-400 leading-relaxed border-t border-white/5 pt-3">
+              ${f.a}
+            </div>
+          </div>
+        `).join("");
+
+        document.querySelectorAll(".faq-btn").forEach(btn => {
+          btn.addEventListener("click", () => {
+            const answer = btn.nextElementSibling;
+            const chevron = btn.querySelector(".faq-chevron");
+            const isOpen = !answer.classList.contains("hidden");
+
+            document.querySelectorAll(".faq-answer").forEach(a => a.classList.add("hidden"));
+            document.querySelectorAll(".faq-chevron").forEach(c => c.classList.remove("rotate-180"));
+
+            if (!isOpen) {
+              answer.classList.remove("hidden");
+              chevron.classList.add("rotate-180");
+            }
+          });
+        });
+      }
+
+      // Contact & Footer Values
+      setText("contact-phone-val", C.contact.phoneDisplay);
+      setAttr("contact-phone-val", "href", `tel:${C.contact.phoneHref}`);
+      setText("contact-wa-val", C.contact.whatsappDisplay);
+      setAttr("contact-wa-val", "href", `https://wa.me/${C.contact.whatsappNumber}`);
+      setText("contact-addr-val", `${C.location.addressLine1}, ${C.location.city} – ${C.location.pincode}`);
+
+      setText("footer-brand", C.brand.name.toUpperCase());
+      setText("footer-address", `${C.location.addressLine1}, ${C.location.city}, ${C.location.state} – ${C.location.pincode}`);
+      setAttr("footer-wa-link", "href", `https://wa.me/${C.contact.whatsappNumber}`);
+      setAttr("footer-map-link", "href", C.location.googleMapsDirectionsUrl);
+      setAttr("floating-whatsapp", "href", `https://wa.me/${C.contact.whatsappNumber}?text=${encodeURIComponent(C.contact.whatsappDefaultMessage)}`);
+
+      setAttr("bar-call", "href", `tel:${C.contact.phoneHref}`);
+      setAttr("bar-wa", "href", `https://wa.me/${C.contact.whatsappNumber}`);
+
+      // Consultation Form Handler
+      const form = document.getElementById("consultation-form");
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("form-name").value.trim();
+          const phone = document.getElementById("form-phone").value.trim();
+          const service = document.getElementById("form-service").value;
+          const area = document.getElementById("form-area").value.trim() || "Not specified";
+          const notes = document.getElementById("form-notes").value.trim() || "None";
+
+          const msg = `*New Customer Inquiry - Krishna Sales Champa*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Requirement:* ${service}\n*Approx Area / Qty:* ${area}\n*Notes:* ${notes}\n\nSent from website consultation form.`;
+          const url = `https://wa.me/${C.contact.whatsappNumber}?text=${encodeURIComponent(msg)}`;
+          window.open(url, "_blank");
+        });
+      }
+
+      // Mobile Menu Toggle
+      const mobileToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      if (mobileToggle && mobileMenu) {
+        mobileToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("hidden");
+        });
+        document.querySelectorAll(".mobile-nav-link").forEach(link => {
+          link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+          });
+        });
+      }
+
+      refreshIcons();
+    });
+  </script>
+</body>
+
+</html>
